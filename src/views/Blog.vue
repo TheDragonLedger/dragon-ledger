@@ -4,8 +4,9 @@
       <p class="subtitle">Author notes</p>
       <h1>Blog</h1>
       <p>
-        Project updates, development notes, reflections, and little records of
-        the work as The Dragon Ledger grows.
+        A record of the journey behind The Dragon Ledger: updates,
+        reflections, creative milestones, and the quiet moments that happen
+        between stories.
       </p>
     </section>
 
@@ -23,5 +24,5 @@
 
 <script setup>
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { journalEntries } from "../data/archiveData";
+import { journalEntries } from "../data/journal";
 </script>

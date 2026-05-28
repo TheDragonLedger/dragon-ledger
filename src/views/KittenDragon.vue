@@ -62,7 +62,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { kittenDragonEntries } from "../data/archiveData";
+import { kittenDragonEntries } from "../data/kittenDragon";
 
 const openImage = ref(null);
 </script>

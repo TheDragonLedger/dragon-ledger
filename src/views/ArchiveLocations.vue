@@ -4,8 +4,8 @@
       <p class="subtitle">The Archive</p>
       <h1>Locations</h1>
       <p>
-        Places that hold memory, family history, power, tenderness, and the
-        emotional geography of the story.
+        Places that carry memory, devotion, history, and the emotional
+        geography at the heart of The Dragon Ledger.
       </p>
     </section>
 
@@ -27,5 +27,5 @@
 
 <script setup>
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { archiveLocations } from "../data/archiveData";
+import { archiveLocations } from "../data/locations";
 </script>

@@ -4,8 +4,8 @@
       <p class="subtitle">Emotional constellations</p>
       <h1>Characters</h1>
       <p>
-        The first portraits of the archive: intimate, symbolic, and ready for
-        artwork, relationship notes, and quotes as the project grows.
+        Portraits of the people behind the stories: their bonds, their scars,
+        the lives they build, and the choices that slowly change them forever.
       </p>
     </section>
 
@@ -129,5 +129,5 @@ import {
   emiliaCircle,
   supportingCharacters,
   valenFamily,
-} from "../data/archiveData";
+} from "../data/characters";
 </script>

@@ -4,9 +4,8 @@
       <p class="subtitle">World and lore</p>
       <h1>The Archive</h1>
       <p>
-        A quiet place for locations, symbols, terminology, and the fragments
-        that shape the world without becoming a heavy wiki before the story
-        needs one.
+        A quiet archive of places, symbols, histories, and fragments of the
+        world slowly unfolding through the stories of The Dragon Ledger.
       </p>
     </section>
 
@@ -28,5 +27,5 @@
 
 <script setup>
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { archiveSections } from "../data/archiveData";
+import { archiveSections } from "../data/archiveSections";
 </script>

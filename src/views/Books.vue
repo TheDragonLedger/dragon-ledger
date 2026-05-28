@@ -4,8 +4,9 @@
       <p class="subtitle">Book archive</p>
       <h1>The Books</h1>
       <p>
-        Stories held separately from the larger world identity, with room for
-        future books, covers, revisions, and release notes.
+        Stories born from quiet moments, difficult choices, soft dragons, and
+        the belief that healing is sometimes found in the people who choose to
+        stay.
       </p>
     </section>
 
@@ -36,5 +37,5 @@
 </template>
 
 <script setup>
-import { books } from "../data/archiveData";
+import { books } from "../data/books";
 </script>

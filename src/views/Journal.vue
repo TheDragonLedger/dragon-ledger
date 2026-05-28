@@ -23,5 +23,5 @@
 
 <script setup>
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { journalEntries } from "../data/archiveData";
+import { journalEntries } from "../data/journal";
 </script>

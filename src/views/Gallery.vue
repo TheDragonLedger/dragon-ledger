@@ -22,5 +22,5 @@
 
 <script setup>
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { galleryItems } from "../data/archiveData";
+import { galleryItems } from "../data/gallery";
 </script>
