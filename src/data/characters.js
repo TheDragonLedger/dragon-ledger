@@ -31,7 +31,7 @@ export const characters = [
   {
     name: "Emilia Varelli",
     portrait: emiliaPortrait,
-    keywords: ["Devotion", "Memory", "Becoming"],
+    keywords: ["Becoming", "Resilience", "Hope"],
     description:
       "A heart at the center of the archive, carrying tenderness and consequence in equal measure.",
     quote: "Some choices become a language the soul remembers.",
@@ -39,7 +39,7 @@ export const characters = [
   {
     name: "Ash Valen",
     portrait: ashPortrait,
-    keywords: ["Fire", "Loyalty", "Conflict"],
+    keywords: ["Fire", "Loyal", "Devoted"],
     description:
       "A presence shaped by heat and restraint, bound to choices that do not stay simple.",
     quote: "Fire does not only destroy. It reveals what refuses to vanish.",
@@ -66,7 +66,7 @@ export const emiliaCircle = [
   {
     name: "Stod Mercer",
     portrait: stodPortrait,
-    keywords: ["Friendship", "Confluence", "Loyalty"],
+    keywords: ["Protective", "Humorous", "Confluence"],
     description:
       "Emilia's best friend, bringing a modern spark, easy humor, and loyal warmth into her orbit.",
     quote:
@@ -75,7 +75,7 @@ export const emiliaCircle = [
   {
     name: "Noelia Aris",
     portrait: noeliaPortrait,
-    keywords: ["Elegance", "Confluence", "Grace"],
+    keywords: ["Elegance", "Grace", "Confluence"],
     description:
       "Emilia's friend and Stod's girlfriend, with an effortless beauty, fluid movements, and an ethereal presence that makes the room briefly fall away.",
     quote: "She was beautiful. Not perfection, not precision. Something softer.",
@@ -83,7 +83,7 @@ export const emiliaCircle = [
   {
     name: "Leah Everen",
     portrait: leahPortrait,
-    keywords: ["Friendship", "Confluence"],
+    keywords: ["Trustworthy", "Understanding", "Confluence"],
     description:
       "One of Ash's closest friends, Leah brings calm warmth, quiet loyalty, and the kind of presence that makes people feel understood without needing many words.",
     quote: "Trust grows easily around the people who never force it.",
@@ -91,7 +91,7 @@ export const emiliaCircle = [
   {
     name: "Stephane Franelli",
     portrait: stephanePortrait,
-    keywords: ["Friendship", "Confluence"],
+    keywords: ["Welcoming", "Kindhearted", "Confluence"],
     description:
       "First connected through his father's bakery, Stephane became one of the people who made Emilia feel welcomed before she even realized she needed a place to belong.",
     quote:
@@ -100,7 +100,7 @@ export const emiliaCircle = [
   {
     name: "Sebastian Valcrest",
     portrait: sebastianPortrait,
-    keywords: ["Friendship", "Confluence"],
+    keywords: ["Protective", "Composed", "Confluence"],
     description:
       "Behind Sebastian's composed authority lies the quiet reliability of someone accustomed to caring for others long before they ask for help.",
     quote:
@@ -109,7 +109,7 @@ export const emiliaCircle = [
   {
     name: "Mica Bellune",
     portrait: micaPortrait,
-    keywords: ["Friendship", "Confluence"],
+    keywords: ["Joyful", "Bright-Spirit", "Confluence"],
     description:
       "Mica carries her own kind of light, the kind that makes people smile more easily and remember life can still feel beautiful.",
     quote: "Happiness often arrives softly, wearing someone else's smile.",
@@ -117,7 +117,7 @@ export const emiliaCircle = [
   {
     name: "Maia Mirelle",
     portrait: maiaPortrait,
-    keywords: ["Friendship", "Confluence"],
+    keywords: ["Playful", "Affectionated", "Confluence"],
     description:
       "Maia moves through every room like a tiny burst of sunlight and trouble, always ready with a teasing smile meant to make someone laugh.",
     quote: "A little chaos keeps the heart alive.",
@@ -125,7 +125,7 @@ export const emiliaCircle = [
   {
     name: "Tea Corvane",
     portrait: teaPortrait,
-    keywords: ["Friendship", "Confluence"],
+    keywords: ["Artist", "Perceptive" , "Confluence"],
     description:
       "Quiet and deeply observant, Tea has a way of seeing beauty in others even when they have forgotten how to see it themselves.",
     quote: "The quietest eyes are often the ones seeing the most.",
@@ -133,7 +133,7 @@ export const emiliaCircle = [
   {
     name: "David Elian",
     portrait: davidPortrait,
-    keywords: ["Friendship", "Anchor"],
+    keywords: ["Friendship", "Anchor", "Steady"],
     description:
       "One of Emilia's oldest friends, David offers the kind of quiet comfort that makes overwhelming days feel survivable and hard moments feel a little less lonely.",
     quote:
@@ -142,7 +142,7 @@ export const emiliaCircle = [
   {
     name: "Ross Elian",
     portrait: rossPortrait,
-    keywords: ["Friendship", "Anchor"],
+    keywords: ["Friendship", "Warmhearted", "Caregiver"],
     description:
       "Ross expresses affection the same way he cooks: generously, warmly, and always with careful attention to the people he loves.",
     quote: "Love often smells like something warm waiting in the kitchen.",
@@ -248,7 +248,7 @@ export const confluenceMembers = [
   {
     name: "July Saren",
     portrait: julyPortrait,
-    keywords: ["Confluence", "Archive"],
+    keywords: ["Confluence", "Provocative", "Attention-Seeker"],
     description:
       "With sharp humor, restless charm, and an almost magnetic need for attention, July leaves people intrigued long before they realize how difficult she truly is to understand.",
     quote: "The loudest performances often hide the quietest fears.",
@@ -256,7 +256,7 @@ export const confluenceMembers = [
   {
     name: "Anders Falken",
     portrait: andersPortrait,
-    keywords: ["Confluence", "Archive"],
+    keywords: ["Confluence", "Observant", "Reserved"],
     description:
       "Anders carries a quiet steadiness within Confluence, speaking little, observing carefully, and revealing only what he chooses to share.",
     quote: "The quietest people are often the hardest to fully understand.",
@@ -264,7 +264,7 @@ export const confluenceMembers = [
   {
     name: "Rose Rivera",
     portrait: rosePortrait,
-    keywords: ["Confluence", "Archive"],
+    keywords: ["Confluence", "Warmhearted","Friendly"],
     description:
       "Kind-hearted and endlessly approachable, Rose finds beauty in slow conversations, sunny parks, and the quiet comfort of simply spending time with people she cares about.",
     quote:
