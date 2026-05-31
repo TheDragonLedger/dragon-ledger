@@ -14,6 +14,7 @@
       <ArchiveCard
         v-for="entry in journalEntries"
         :key="entry.title"
+        class="blog-card"
         :title="entry.title"
         eyebrow="Journal"
         :body="entry.note"
