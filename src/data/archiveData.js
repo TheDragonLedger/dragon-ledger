@@ -5,3 +5,4 @@ export * from "./gallery";
 export * from "./journal";
 export * from "./kittenDragon";
 export * from "./locations";
+export * from "./moodboards";

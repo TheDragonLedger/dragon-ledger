@@ -5,6 +5,7 @@ import Books from "../views/Books.vue";
 import Characters from "../views/Characters.vue";
 import World from "../views/World.vue";
 import ArchiveLocations from "../views/ArchiveLocations.vue";
+import ArchiveMoodboards from "../views/ArchiveMoodboards.vue";
 import KittenDragon from "../views/KittenDragon.vue";
 import Blog from "../views/Blog.vue";
 import About from "../views/About.vue";
@@ -38,6 +39,11 @@ const routes = [
     path: "/archive/locations",
     name: "ArchiveLocations",
     component: ArchiveLocations,
+  },
+  {
+    path: "/archive/moodboards",
+    name: "ArchiveMoodboards",
+    component: ArchiveMoodboards,
   },
   {
     path: "/kitten-dragon",
