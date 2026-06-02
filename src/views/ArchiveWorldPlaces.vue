@@ -1,0 +1,107 @@
+<template>
+  <main class="page">
+    <section class="page-intro">
+      <p class="subtitle">The Archive</p>
+      <h1>Places of the World</h1>
+      <p>
+        Countries, cities, regions, and the wider geography shaping the world
+        of The Dragon Ledger.
+      </p>
+    </section>
+
+    <router-link to="/archive" class="back-link">Back to The Archive</router-link>
+
+    <section class="world-overview">
+      <article class="archive-card world-map-card">
+        <div class="world-map-wrap">
+          <img
+            class="world-map-image"
+            :src="worldOverview.image"
+            :alt="`${worldOverview.title} map`"
+          />
+          <router-link
+            v-for="realm in worldOverview.realms"
+            :key="realm.title"
+            class="world-map-button"
+            :class="{ 'world-map-button-disabled': !hasCountry(realm.title) }"
+            :style="realm.position"
+            :to="hasCountry(realm.title) ? realm.path : '/archive/places-of-the-world'"
+          >
+            {{ realm.title }}
+          </router-link>
+        </div>
+
+        <p class="card-eyebrow">{{ worldOverview.category }}</p>
+        <h2>{{ worldOverview.title }}</h2>
+        <div class="card-body">
+          <p
+            v-for="paragraph in worldOverview.description"
+            :key="paragraph"
+          >
+            {{ paragraph }}
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-heading">
+      <p class="subtitle">Countries</p>
+      <h2>Realms</h2>
+    </section>
+
+    <section class="content-grid archive-entry-grid">
+      <ArchiveCard
+        v-if="countries.length === 0"
+        title="Country entries coming soon"
+        body="Countries, cities, regions, and landmarks will gather here as the world opens further."
+      />
+
+      <router-link
+        v-for="country in countries"
+        v-else
+        :key="country.title"
+        :to="`/archive/places-of-the-world/${country.slug}`"
+        class="card-link"
+      >
+        <ArchiveCard
+          :title="country.title"
+          :eyebrow="country.category"
+          :body="country.description"
+          :image="country.image"
+          :image-alt="`${country.title} landscape`"
+        />
+      </router-link>
+    </section>
+
+    <section class="section-heading">
+      <p class="subtitle">Waters</p>
+      <h2>Crossroads</h2>
+    </section>
+
+    <section class="content-grid archive-entry-grid">
+      <router-link
+        v-for="water in waters"
+        :key="water.title"
+        :to="`/archive/places-of-the-world/${water.slug}`"
+        class="card-link"
+      >
+        <ArchiveCard
+          :title="water.title"
+          :eyebrow="water.category"
+          :body="water.description"
+          :image="water.image"
+          :image-alt="`${water.title} landscape`"
+        />
+      </router-link>
+    </section>
+  </main>
+</template>
+
+<script setup>
+import ArchiveCard from "../components/ArchiveCard.vue";
+import { countries, waters, worldOverview } from "../data/worldPlaces";
+
+function hasCountry(title) {
+  return countries.some((country) => country.title === title);
+}
+</script>

@@ -16,10 +16,11 @@
         class="kitten-story"
       >
         <button
+          ref="storyButtons"
           class="kitten-story-image"
           type="button"
           :aria-label="`Open ${entry.title} illustration`"
-          @click="openImage = entry"
+          @click="openStoryImage(entry)"
         >
           <img :src="entry.image" :alt="`${entry.title} illustration`" />
         </button>
@@ -44,13 +45,15 @@
         role="dialog"
         aria-modal="true"
         :aria-label="`${openImage.title} image preview`"
-        @click.self="openImage = null"
+        @keydown.esc="closeStoryImage"
+        @click.self="closeStoryImage"
       >
         <button
+          ref="closeButton"
           class="image-lightbox-close"
           type="button"
           aria-label="Close image preview"
-          @click="openImage = null"
+          @click="closeStoryImage"
         >
           Close
         </button>
@@ -61,8 +64,35 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { nextTick, ref, watch } from "vue";
 import { kittenDragonEntries } from "../data/kittenDragon";
 
 const openImage = ref(null);
+const storyButtons = ref([]);
+const closeButton = ref(null);
+const lastOpenedIndex = ref(null);
+
+function openStoryImage(entry) {
+  lastOpenedIndex.value = kittenDragonEntries.findIndex(
+    (item) => item.title === entry.title,
+  );
+  openImage.value = entry;
+}
+
+function closeStoryImage() {
+  openImage.value = null;
+}
+
+watch(openImage, async (entry) => {
+  if (entry) {
+    await nextTick();
+    closeButton.value?.focus();
+    return;
+  }
+
+  await nextTick();
+  if (lastOpenedIndex.value !== null) {
+    storyButtons.value[lastOpenedIndex.value]?.focus();
+  }
+});
 </script>

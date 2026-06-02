@@ -4,8 +4,8 @@
       <p class="subtitle">The Archive</p>
       <h1>Moodboards</h1>
       <p>
-        Visual collections for atmosphere, emotional threads, domestic rituals,
-        and the quiet imagery that shapes The Dragon Ledger.
+        Visual collections for character ideas, relationships, themes,
+        atmosphere, and the quiet imagery that shapes The Dragon Ledger.
       </p>
     </section>
 

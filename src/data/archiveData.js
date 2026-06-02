@@ -6,3 +6,4 @@ export * from "./journal";
 export * from "./kittenDragon";
 export * from "./locations";
 export * from "./moodboards";
+export * from "./worldPlaces";

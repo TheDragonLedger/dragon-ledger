@@ -16,8 +16,8 @@
         :key="entry.title"
         class="blog-card"
         :title="entry.title"
-        eyebrow="Journal"
-        :body="entry.note"
+        :eyebrow="`${entry.category} · ${formatDate(entry.date)}`"
+        :body="entry.excerpt"
       />
     </section>
   </main>
@@ -26,4 +26,14 @@
 <script setup>
 import ArchiveCard from "../components/ArchiveCard.vue";
 import { journalEntries } from "../data/journal";
+
+const dateFormatter = new Intl.DateTimeFormat("en", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
+
+function formatDate(date) {
+  return dateFormatter.format(new Date(`${date}T00:00:00`));
+}
 </script>

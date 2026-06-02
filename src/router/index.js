@@ -6,9 +6,12 @@ import Characters from "../views/Characters.vue";
 import World from "../views/World.vue";
 import ArchiveLocations from "../views/ArchiveLocations.vue";
 import ArchiveMoodboards from "../views/ArchiveMoodboards.vue";
+import ArchiveCountry from "../views/ArchiveCountry.vue";
+import ArchiveWorldPlaces from "../views/ArchiveWorldPlaces.vue";
 import KittenDragon from "../views/KittenDragon.vue";
 import Blog from "../views/Blog.vue";
 import About from "../views/About.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routes = [
   {
@@ -46,6 +49,16 @@ const routes = [
     component: ArchiveMoodboards,
   },
   {
+    path: "/archive/places-of-the-world",
+    name: "ArchiveWorldPlaces",
+    component: ArchiveWorldPlaces,
+  },
+  {
+    path: "/archive/places-of-the-world/:slug",
+    name: "ArchiveCountry",
+    component: ArchiveCountry,
+  },
+  {
     path: "/kitten-dragon",
     name: "KittenDragon",
     component: KittenDragon,
@@ -63,6 +76,11 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: NotFound,
   },
 ];
 

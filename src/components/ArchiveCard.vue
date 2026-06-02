@@ -2,6 +2,7 @@
   <article class="archive-card">
     <button
       v-if="image"
+      ref="imageButton"
       class="card-image-button"
       type="button"
       :aria-label="`Open ${title} image`"
@@ -16,7 +17,14 @@
     </button>
     <p v-if="eyebrow" class="card-eyebrow">{{ eyebrow }}</p>
     <h2>{{ title }}</h2>
-    <p class="card-body">{{ body }}</p>
+    <div class="card-body">
+      <p
+        v-for="paragraph in bodyParagraphs"
+        :key="paragraph"
+      >
+        {{ paragraph }}
+      </p>
+    </div>
     <slot />
 
     <Teleport to="body">
@@ -26,13 +34,15 @@
         role="dialog"
         aria-modal="true"
         :aria-label="`${title} image preview`"
+        @keydown.esc="closeImage"
         @click.self="isImageOpen = false"
       >
         <button
+          ref="closeButton"
           class="image-lightbox-close"
           type="button"
           aria-label="Close image preview"
-          @click="isImageOpen = false"
+          @click="closeImage"
         >
           Close
         </button>
@@ -43,9 +53,9 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { computed, nextTick, ref, watch } from "vue";
 
-defineProps({
+const props = defineProps({
   eyebrow: String,
   title: {
     type: String,
@@ -61,4 +71,24 @@ defineProps({
 });
 
 const isImageOpen = ref(false);
+const imageButton = ref(null);
+const closeButton = ref(null);
+const bodyParagraphs = computed(() =>
+  Array.isArray(props.body) ? props.body : [props.body],
+);
+
+function closeImage() {
+  isImageOpen.value = false;
+}
+
+watch(isImageOpen, async (isOpen) => {
+  if (isOpen) {
+    await nextTick();
+    closeButton.value?.focus();
+    return;
+  }
+
+  await nextTick();
+  imageButton.value?.focus();
+});
 </script>
