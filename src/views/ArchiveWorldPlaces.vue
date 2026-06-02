@@ -78,7 +78,7 @@
       <h2>Crossroads</h2>
     </section>
 
-    <section class="content-grid archive-entry-grid">
+    <section class="content-grid archive-entry-grid world-water-grid">
       <router-link
         v-for="water in waters"
         :key="water.title"

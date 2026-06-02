@@ -278,7 +278,8 @@ img {
 
 .world-overview {
   display: grid;
-  margin-top: 0.25rem;
+  width: min(100%, 58rem);
+  margin: 0.25rem auto 0;
 }
 
 .world-map-card.archive-card {
@@ -296,8 +297,9 @@ img {
 
 .world-map-image {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: rgba(8, 8, 9, 0.58);
 }
 
 .world-map-button {
@@ -349,6 +351,14 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.25rem;
+  width: min(100%, 58rem);
+  margin: 0 auto;
+}
+
+.world-water-grid {
+  width: min(100%, 34rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .book-list {
@@ -427,12 +437,13 @@ img {
 .kitten-story-list {
   display: grid;
   gap: 1.5rem;
-  max-width: 58rem;
+  width: min(100%, 50rem);
+  margin: 0 auto;
 }
 
 .kitten-story {
   display: grid;
-  grid-template-columns: minmax(14rem, 23rem) minmax(0, 1fr);
+  grid-template-columns: minmax(13rem, 19rem) minmax(0, 1fr);
   gap: clamp(1.25rem, 4vw, 2.25rem);
   align-items: center;
   padding: clamp(1rem, 3vw, 1.5rem);
@@ -450,6 +461,8 @@ img {
 
 .kitten-story-image {
   width: 100%;
+  max-width: 19rem;
+  justify-self: center;
   padding: 0;
   border: 0;
   border-radius: 6px;
@@ -478,22 +491,22 @@ img {
 }
 
 .kitten-story-text {
-  max-width: 31rem;
+  max-width: 28rem;
 }
 
 .kitten-story-text h2 {
   margin-bottom: 1rem;
   color: #fff8ef;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  font-size: clamp(1.75rem, 3.4vw, 2.35rem);
   font-weight: 600;
   line-height: 1;
 }
 
 .kitten-story-text p:not(.card-eyebrow) {
   color: rgba(245, 241, 234, 0.78);
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 0.94rem;
+  line-height: 1.7;
 }
 
 .kitten-story-text p + p {
@@ -792,7 +805,16 @@ blockquote {
 }
 
 .about-intro {
-  max-width: 52rem;
+  max-width: 48rem;
+}
+
+.about-intro h1 {
+  font-size: clamp(2.45rem, 6vw, 4rem);
+}
+
+.about-intro p:not(.subtitle) {
+  font-size: 0.94rem;
+  line-height: 1.72;
 }
 
 .about-section {
