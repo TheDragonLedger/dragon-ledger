@@ -723,10 +723,11 @@ blockquote {
 
 .not-found-page {
   position: relative;
-  min-height: 100svh;
+  min-height: calc(100svh - var(--navbar-height, 5.5rem));
   display: flex;
   align-items: flex-end;
-  padding: calc(var(--navbar-height, 5.5rem) + 2rem) 7vw 8vh;
+  margin-top: var(--navbar-height, 5.5rem);
+  padding: 2rem 7vw 8vh;
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -939,10 +940,11 @@ blockquote {
   }
 
   .not-found-page {
-    min-height: 100svh;
+    min-height: calc(100svh - var(--navbar-height));
     align-items: flex-end;
     justify-content: center;
-    padding: calc(var(--navbar-height) + 1rem) 1rem 2rem;
+    margin-top: var(--navbar-height);
+    padding: 1rem 1rem 2rem;
     background-position: 62% center;
   }
 
