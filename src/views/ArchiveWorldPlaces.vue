@@ -26,8 +26,10 @@
             :class="{ 'world-map-button-disabled': !hasCountry(realm.title) }"
             :style="realm.position"
             :to="hasCountry(realm.title) ? realm.path : '/archive/places-of-the-world'"
+            :aria-label="`Open ${realm.title}`"
+            :title="realm.title"
           >
-            {{ realm.title }}
+            <span class="sr-only">{{ realm.title }}</span>
           </router-link>
         </div>
 
