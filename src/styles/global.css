@@ -727,7 +727,7 @@ blockquote {
   display: flex;
   align-items: flex-end;
   margin-top: var(--navbar-height, 5.5rem);
-  padding: 2rem 7vw 4.5vh;
+  padding: 2rem 7vw 1.8vh;
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -944,7 +944,7 @@ blockquote {
     align-items: flex-end;
     justify-content: center;
     margin-top: var(--navbar-height);
-    padding: 1rem 1rem 1.25rem;
+    padding: 1rem 1rem 0.7rem;
     background-position: 62% center;
   }
 
