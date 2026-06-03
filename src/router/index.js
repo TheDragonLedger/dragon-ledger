@@ -11,6 +11,7 @@ import ArchiveWorldPlaces from "../views/ArchiveWorldPlaces.vue";
 import KittenDragon from "../views/KittenDragon.vue";
 import Blog from "../views/Blog.vue";
 import About from "../views/About.vue";
+import Contact from "../views/Contact.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -76,6 +77,11 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
   },
   {
     path: "/:pathMatch(.*)*",

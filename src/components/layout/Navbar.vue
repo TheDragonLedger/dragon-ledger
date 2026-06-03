@@ -13,6 +13,7 @@
       <router-link to="/kitten-dragon">Kitten & Dragon</router-link>
       <router-link to="/blog">Blog</router-link>
       <router-link to="/about">About the Author</router-link>
+      <router-link to="/contact">Contact</router-link>
     </div>
   </nav>
 </template>
@@ -67,7 +68,9 @@ import siteLogo from "../../assets/dragon-ledger-logo.png";
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
 }
 
 .nav-links a {
