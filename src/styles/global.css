@@ -424,14 +424,15 @@ img {
 
 .kitten-story-shelf {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11.5rem), 14rem));
+  justify-content: start;
+  gap: 0.9rem;
 }
 
 .kitten-story-card {
   display: grid;
   min-height: 100%;
-  padding: 1rem;
+  padding: 0.78rem;
   border: 1px solid rgba(215, 184, 147, 0.14);
   border-radius: 8px;
   background:
@@ -456,18 +457,17 @@ img {
 
 .kitten-story-card img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  margin-bottom: 1rem;
+  margin-bottom: 0.78rem;
   border: 1px solid rgba(215, 184, 147, 0.18);
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
 .kitten-story-card h2 {
   color: #fff8ef;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
   font-weight: 600;
   line-height: 1.05;
 }
