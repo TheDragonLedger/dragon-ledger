@@ -9,6 +9,7 @@ import ArchiveMoodboards from "../views/ArchiveMoodboards.vue";
 import ArchiveCountry from "../views/ArchiveCountry.vue";
 import ArchiveWorldPlaces from "../views/ArchiveWorldPlaces.vue";
 import KittenDragon from "../views/KittenDragon.vue";
+import KittenDragonStory from "../views/KittenDragonStory.vue";
 import Blog from "../views/Blog.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
@@ -63,6 +64,11 @@ const routes = [
     path: "/kitten-dragon",
     name: "KittenDragon",
     component: KittenDragon,
+  },
+  {
+    path: "/kitten-dragon/:slug",
+    name: "KittenDragonStory",
+    component: KittenDragonStory,
   },
   {
     path: "/blog",

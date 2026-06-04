@@ -3,9 +3,11 @@ import kittenDragonBreakfast from "../assets/kitten-daydreaming-dragon-breakfast
 
 export const kittenDragonEntries = [
   {
+    slug: "two-hearts-one-quiet-little-world",
     title: "Two Hearts, One Quiet Little World",
     mood: "The beginning",
     image: kittenDragonStart,
+    summary: "The first quiet beginning of Kitten and Dragon's little world.",
     story: [
       "In a noisy world, a tiny kitten found peace in the arms of a dragon.",
       "Different in every way, yet perfectly matched, they built a life out of warm coffee, late nights, soft kisses, and the kind of love that feels like coming home.",
@@ -15,9 +17,11 @@ export const kittenDragonEntries = [
     ],
   },
   {
+    slug: "a-wish-for-wings",
     title: "A Wish for Wings",
     mood: "Morning warmth",
     image: kittenDragonBreakfast,
+    summary: "A soft morning of sky dreams, pancakes, and being loved exactly as you are.",
     story: [
       "The morning sun spilled through the kitchen windows while Kitten sat quietly beside them, watching the endless blue sky above the trees.",
       "Sometimes, she imagined what it would feel like to fly. In her dreams, she had wings strong enough to follow Dragon through the clouds and see the world beside him.",
@@ -35,3 +39,9 @@ export const kittenDragonEntries = [
     ],
   },
 ];
+
+export const kittenDragonStoriesNewestFirst = [...kittenDragonEntries].reverse();
+
+export function findKittenDragonStory(slug) {
+  return kittenDragonEntries.find((entry) => entry.slug === slug);
+}
