@@ -18,7 +18,11 @@
       <div class="kitten-story-text">
         <p class="card-eyebrow">{{ story.mood }}</p>
         <h1>{{ story.title }}</h1>
-        <p v-for="paragraph in story.story" :key="paragraph">
+        <p
+          v-for="paragraph in story.story"
+          :key="paragraph"
+          :class="{ 'story-note': isNoteParagraph(paragraph) }"
+        >
           {{ paragraph }}
         </p>
       </div>
@@ -74,6 +78,10 @@ function openStoryImage() {
 
 function closeStoryImage() {
   openImage.value = false;
+}
+
+function isNoteParagraph(paragraph) {
+  return paragraph.includes("\n");
 }
 
 watch(openImage, async (isOpen) => {

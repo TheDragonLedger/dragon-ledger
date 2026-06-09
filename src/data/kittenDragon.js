@@ -1,5 +1,6 @@
 import kittenDragonStart from "../assets/kitten-dragon-start.png";
 import kittenDragonBreakfast from "../assets/kitten-daydreaming-dragon-breakfast.png";
+import kittenCold from "../assets/kitten-cold.png";
 
 export const kittenDragonEntries = [
   {
@@ -36,6 +37,25 @@ export const kittenDragonEntries = [
       "\"Thank you, love,\" Kitten purred, smiling at her dragon.",
       "Kitten hurried to the table, where warm pancakes, sweet coffee, and fresh cherries were already waiting for her.",
       "And for a little while, the world felt warm, quiet, and safe.",
+    ],
+  },
+  {
+    slug: "everything-can-wait-until-tomorrow",
+    title: "Everything Can Wait Until Tomorrow",
+    mood: "Rainy quiet",
+    image: kittenCold,
+    summary: "A cold evening, warm coffee, and the comfort of being cared for even from afar.",
+    story: [
+      "As the sky outside grew darker and colder, rain tapped softly against the windows. The house was quiet, and for once, Kitten didn't mind the silence.",
+      "Wrapped in her favorite blanket, she curled up on the couch and sipped her coffee.",
+      "For once, there was nothing she needed to do. No work, no questions, no errands waiting for her attention. She could simply enjoy her cookies, read her favorite book, and lose herself in stories of distant kingdoms and dark heroes rescuing ladies in distress.",
+      "Everything else could wait until tomorrow.",
+      "\"What should I have for dinner?\" Kitten wondered aloud.",
+      "As she looked around, she spotted a small note resting on the coffee table.",
+      "Dear Love,\nI'll be back tomorrow afternoon. I left lunch and dinner ready for you in the fridge.\nBe safe.\nYour Dragon.",
+      "A soft purr escaped her.",
+      "Smiling, Kitten tucked the note inside her journal before returning to her book, her coffee, and the warmth of the evening.",
+      "Outside, the rain continued to fall. Inside, everything felt just right.",
     ],
   },
 ];
