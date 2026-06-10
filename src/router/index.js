@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Books from "../views/Books.vue";
 import Characters from "../views/Characters.vue";
+import Postcards from "../views/Postcards.vue";
+import PostcardDetail from "../views/PostcardDetail.vue";
 import World from "../views/World.vue";
 import ArchiveLocations from "../views/ArchiveLocations.vue";
 import ArchiveMoodboards from "../views/ArchiveMoodboards.vue";
@@ -30,6 +32,16 @@ const routes = [
     path: "/characters",
     name: "Characters",
     component: Characters,
+  },
+  {
+    path: "/postcards",
+    name: "Postcards",
+    component: Postcards,
+  },
+  {
+    path: "/postcards/:slug",
+    name: "PostcardDetail",
+    component: PostcardDetail,
   },
   {
     path: "/archive",

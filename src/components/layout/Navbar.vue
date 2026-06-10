@@ -9,6 +9,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/books">Books</router-link>
       <router-link to="/characters">Characters</router-link>
+      <router-link to="/postcards">Emilia's Postcards</router-link>
       <router-link to="/archive">The Archive</router-link>
       <router-link to="/kitten-dragon">Kitten & Dragon</router-link>
       <router-link to="/blog">Blog</router-link>

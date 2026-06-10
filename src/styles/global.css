@@ -422,6 +422,131 @@ img {
   white-space: pre-line;
 }
 
+.postcards-intro {
+  max-width: 48rem;
+}
+
+.postcard-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 22rem));
+  justify-content: start;
+  gap: 1rem;
+}
+
+.postcard-card {
+  display: grid;
+  min-height: 100%;
+  padding: 0.9rem;
+  border: 1px solid rgba(215, 184, 147, 0.14);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at top left, rgba(215, 184, 147, 0.08), transparent 18rem),
+    radial-gradient(circle at bottom right, rgba(127, 47, 39, 0.11), transparent 14rem),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.016)),
+    rgba(14, 13, 12, 0.72);
+  box-shadow: 0 1.25rem 3.5rem rgba(0, 0, 0, 0.18);
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.postcard-card:hover {
+  border-color: rgba(215, 184, 147, 0.28);
+  transform: translateY(-2px);
+  box-shadow:
+    0 1.5rem 4rem rgba(0, 0, 0, 0.24),
+    0 0 2rem rgba(127, 47, 39, 0.08);
+}
+
+.postcard-card img {
+  width: 100%;
+  margin-bottom: 0.9rem;
+  border: 1px solid rgba(215, 184, 147, 0.18);
+  border-radius: 6px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.postcard-card h2 {
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.postcard-detail {
+  display: grid;
+  grid-template-columns: minmax(18rem, 34rem) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: center;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid rgba(215, 184, 147, 0.14);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at top left, rgba(215, 184, 147, 0.08), transparent 18rem),
+    radial-gradient(circle at bottom right, rgba(127, 47, 39, 0.12), transparent 16rem),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(14, 13, 12, 0.72);
+  box-shadow:
+    0 1.25rem 3.5rem rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(215, 184, 147, 0.07);
+}
+
+.postcard-detail-image {
+  width: 100%;
+  justify-self: center;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.postcard-detail-image img {
+  width: 100%;
+  border: 1px solid rgba(215, 184, 147, 0.22);
+  border-radius: 6px;
+  object-fit: contain;
+  box-shadow:
+    0 1rem 2.5rem rgba(0, 0, 0, 0.42),
+    0 0 2.5rem rgba(127, 47, 39, 0.12);
+  transition:
+    border-color 0.25s ease,
+    filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+.postcard-detail-image:hover img {
+  border-color: rgba(215, 184, 147, 0.38);
+  filter: brightness(1.06);
+  transform: scale(1.01);
+}
+
+.postcard-detail-text {
+  max-width: 32rem;
+}
+
+.postcard-detail-text h1 {
+  margin-bottom: 1rem;
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.postcard-detail-text p:not(.card-eyebrow) {
+  color: rgba(245, 241, 234, 0.78);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.postcard-detail-text p + p {
+  margin-top: 1rem;
+}
+
 .kitten-story-shelf {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 11.5rem), 14rem));
@@ -1132,6 +1257,16 @@ blockquote {
   }
 
   .book-details {
+    max-width: none;
+    text-align: center;
+  }
+
+  .postcard-detail {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .postcard-detail-text {
     max-width: none;
     text-align: center;
   }
