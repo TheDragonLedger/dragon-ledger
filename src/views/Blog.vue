@@ -1,39 +1,38 @@
 <template>
-  <main class="page">
-    <section class="page-intro">
-      <p class="subtitle">Author notes</p>
-      <h1>Blog</h1>
+  <main class="page journey-page">
+    <section class="page-intro journey-intro">
+      <p class="subtitle">Story journey</p>
+      <h1>The Journey</h1>
       <p>
-        A record of the journey behind The Dragon Ledger: updates,
-        reflections, creative milestones, and the quiet moments that happen
-        between stories.
+        Fragments from the long road that carried The Dragon's Choice from a
+        persistent spark to a living archive: false starts, discoveries,
+        voices found, doors opened, and letters sent into the world.
       </p>
     </section>
 
-    <section class="timeline">
-      <ArchiveCard
-        v-for="entry in journalEntries"
+    <section class="journey-timeline" aria-label="The Dragon's Choice journey">
+      <article
+        v-for="(entry, index) in journalEntriesNewestFirst"
         :key="entry.title"
-        class="blog-card"
-        :title="entry.title"
-        :eyebrow="`${entry.category} · ${formatDate(entry.date)}`"
-        :body="entry.excerpt"
-      />
+        class="journey-card"
+      >
+        <div class="journey-card-marker">
+          {{ String(index + 1).padStart(2, "0") }}
+        </div>
+
+        <div class="journey-card-content">
+          <p class="card-eyebrow">{{ entry.period }}</p>
+          <h2>{{ entry.title }}</h2>
+          <p class="journey-motif">{{ entry.motif }}</p>
+          <p>{{ entry.excerpt }}</p>
+        </div>
+      </article>
     </section>
   </main>
 </template>
 
 <script setup>
-import ArchiveCard from "../components/ArchiveCard.vue";
 import { journalEntries } from "../data/journal";
 
-const dateFormatter = new Intl.DateTimeFormat("en", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-});
-
-function formatDate(date) {
-  return dateFormatter.format(new Date(`${date}T00:00:00`));
-}
+const journalEntriesNewestFirst = [...journalEntries].reverse();
 </script>

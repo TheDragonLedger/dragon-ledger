@@ -88,6 +88,10 @@ const routes = [
     component: Blog,
   },
   {
+    path: "/journey",
+    redirect: "/blog",
+  },
+  {
     path: "/journal",
     redirect: "/blog",
   },

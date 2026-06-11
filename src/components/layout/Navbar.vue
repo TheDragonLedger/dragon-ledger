@@ -12,7 +12,7 @@
       <router-link to="/postcards">Emilia's Postcards</router-link>
       <router-link to="/archive">The Archive</router-link>
       <router-link to="/kitten-dragon">Kitten & Dragon</router-link>
-      <router-link to="/blog">Blog</router-link>
+      <router-link to="/blog">Journey</router-link>
       <router-link to="/about">About the Author</router-link>
       <router-link to="/contact">Contact</router-link>
     </div>

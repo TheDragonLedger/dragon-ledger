@@ -1,37 +1,51 @@
 export const journalEntries = [
   {
-    title: "Website foundation",
-    date: "2026-05-09",
-    category: "Website",
+    title: "The First Spark",
+    period: "About six years ago",
+    motif: "A half-seen door",
     excerpt:
-      "Building the archive structure, visual tone, and first responsive pages.",
+      "The story began as a small idea that would not leave. It was not yet Emilia, not yet Ash, not yet The Dragon's Choice, but something in it kept returning: a woman shaped by loneliness, a bond waiting to be chosen, and the sense that love could become a kind of shelter.",
   },
   {
-    title: "Book One revisions",
-    date: "2026-05-27",
-    category: "Book One",
+    title: "False Starts",
+    period: "The years between",
+    motif: "Pages set aside",
     excerpt:
-      "The Dragon's Choice enters its editorial phase, with revisions focused on structure, voice, and continuity.",
+      "There were several attempts to write the novel before it was ready. Drafts opened and closed. Scenes arrived out of order. Some versions carried pieces of the truth, but the heart of the book had not found its rhythm yet.",
   },
   {
-    title: "Final revisions",
-    date: "2026-05-28",
-    category: "Book One",
+    title: "Finding Emilia",
+    period: "When the voice cleared",
+    motif: "A quiet room",
     excerpt:
-      "The Dragon's Choice continues through its final revisions, one page at a time.",
+      "The story changed when Emilia became clear. Her silence, tenderness, guarded strength, and need for chosen family gave the world its emotional center. Once her voice arrived, the archive around her began to gather shape.",
   },
   {
-    title: "Opening the doors",
-    date: "2026-05-27",
-    category: "Website",
+    title: "The Dragon Finds Its Voice",
+    period: "The manuscript clicks",
+    motif: "Smoke and gold",
     excerpt:
-      "The Dragon's Ledger website is now online, opening the first pages of the archive to readers, friends, and fellow travelers.",
+      "At last, the book understood what it wanted to be. The pieces that had resisted each other began to move together: devotion, inheritance, fear, healing, and the kind of love that asks a person to become fully alive.",
   },
   {
-    title: "Sending the first letters",
-    date: "2026-06-01",
-    category: "Publishing",
+    title: "Building the Ledger",
+    period: "The world gathers",
+    motif: "Maps and fragments",
     excerpt:
-      "The first query letters leave the archive as The Dragon's Choice begins its search for a publishing home.",
+      "Characters, locations, maps, moodboards, postcards, and companion pieces began finding a home beyond the manuscript. The Dragon Ledger became a place to keep the world alive while the stories continued to grow.",
+  },
+  {
+    title: "Opening the Doors",
+    period: "The archive goes live",
+    motif: "A lit window",
+    excerpt:
+      "The website opened as a living archive: a quiet space for readers, friends, and curious travelers to step into the world of The Dragon's Choice and see the emotional landscape surrounding it.",
+  },
+  {
+    title: "Sending the First Letters",
+    period: "The search begins",
+    motif: "Letters leaving home",
+    excerpt:
+      "Query letters began to leave the archive, carrying The Dragon's Choice toward the possibility of a publishing home. After years of trying, shaping, and returning, the story finally began knocking on doors beyond its own world.",
   },
 ];
