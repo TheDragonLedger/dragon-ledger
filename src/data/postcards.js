@@ -1,4 +1,5 @@
 import emiliaUmbraFirstMeeting from "../assets/emilia-umbra-first-meeting.png";
+import waitingForTom from "../assets/waiting-for-tom.png";
 
 export const postcardEntries = [
   {
@@ -14,6 +15,17 @@ export const postcardEntries = [
       "Others begin with a silent look across a table at the end of an ordinary afternoon.",
       "By sunset, Emilia had found a companion.",
       "And Umbra had found his person.",
+    ],
+  },
+  {
+    slug: "waiting-for-tom",
+    title: "Waiting for Tom",
+    mood: "Childhood memory",
+    image: waitingForTom,
+    summary: "A little girl, an open door, and the best part of the day waiting at the threshold of Varelli Manor.",
+    story: [
+      "Before responsibilities, expectations, and years changed the shape of their relationship, Emilia spent many afternoons waiting by the front door of Varelli Manor for her brother to come home from school.",
+      "For a little girl of five, there was no better part of the day.",
     ],
   },
 ];

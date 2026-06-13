@@ -295,6 +295,14 @@ img {
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.35);
 }
 
+.world-map-image-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
 .world-map-image {
   width: 100%;
   aspect-ratio: 1402 / 1122;
@@ -304,6 +312,7 @@ img {
 
 .world-map-button {
   position: absolute;
+  z-index: 2;
   transform: translate(-50%, -50%);
   display: inline-flex;
   align-items: center;
@@ -1218,6 +1227,43 @@ blockquote {
   line-height: 1;
 }
 
+.back-to-top {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.6rem);
+  bottom: clamp(1rem, 3vw, 1.6rem);
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(215, 184, 147, 0.32);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(127, 47, 39, 0.34), rgba(31, 52, 69, 0.24)),
+    rgba(10, 10, 10, 0.78);
+  color: rgba(245, 215, 202, 0.92);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.back-to-top:hover {
+  border-color: rgba(245, 215, 202, 0.58);
+  color: #fff8ef;
+  transform: translateY(-2px);
+}
+
 .site-footer {
   width: 100%;
   margin-top: auto;
@@ -1277,6 +1323,14 @@ blockquote {
     letter-spacing: 0.25rem;
 
     margin-bottom: 1rem;
+  }
+
+  .back-to-top {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    min-height: 2.15rem;
+    padding: 0.48rem 0.68rem;
+    font-size: 0.68rem;
   }
 
   .hero-title {

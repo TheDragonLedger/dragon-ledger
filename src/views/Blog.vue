@@ -17,7 +17,7 @@
         class="journey-card"
       >
         <div class="journey-card-marker">
-          {{ String(index + 1).padStart(2, "0") }}
+          {{ getJourneyNumber(index) }}
         </div>
 
         <div class="journey-card-content">
@@ -35,4 +35,8 @@
 import { journalEntries } from "../data/journal";
 
 const journalEntriesNewestFirst = [...journalEntries].reverse();
+
+function getJourneyNumber(index) {
+  return String(journalEntries.length - index).padStart(2, "0");
+}
 </script>

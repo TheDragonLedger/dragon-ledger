@@ -14,11 +14,19 @@
     <section class="world-overview">
       <article class="archive-card world-map-card">
         <div class="world-map-wrap">
-          <img
-            class="world-map-image"
-            :src="worldOverview.image"
-            :alt="`${worldOverview.title} map`"
-          />
+          <button
+            ref="mapButton"
+            class="world-map-image-button"
+            type="button"
+            :aria-label="`Open ${worldOverview.title} map preview`"
+            @click="openMap"
+          >
+            <img
+              class="world-map-image"
+              :src="worldOverview.image"
+              :alt="`${worldOverview.title} map`"
+            />
+          </button>
           <router-link
             v-for="realm in worldOverview.realms"
             :key="realm.title"
@@ -45,6 +53,29 @@
         </div>
       </article>
     </section>
+
+    <Teleport to="body">
+      <div
+        v-if="isMapOpen"
+        class="image-lightbox"
+        role="dialog"
+        aria-modal="true"
+        :aria-label="`${worldOverview.title} map preview`"
+        @keydown.esc="closeMap"
+        @click.self="closeMap"
+      >
+        <button
+          ref="closeButton"
+          class="image-lightbox-close"
+          type="button"
+          aria-label="Close map preview"
+          @click="closeMap"
+        >
+          Close
+        </button>
+        <img :src="worldOverview.image" :alt="`${worldOverview.title} map`" />
+      </div>
+    </Teleport>
 
     <section class="section-heading">
       <p class="subtitle">Countries</p>
@@ -100,10 +131,34 @@
 </template>
 
 <script setup>
+import { nextTick, ref, watch } from "vue";
 import ArchiveCard from "../components/ArchiveCard.vue";
 import { countries, waters, worldOverview } from "../data/worldPlaces";
+
+const isMapOpen = ref(false);
+const mapButton = ref(null);
+const closeButton = ref(null);
 
 function hasCountry(title) {
   return countries.some((country) => country.title === title);
 }
+
+function openMap() {
+  isMapOpen.value = true;
+}
+
+function closeMap() {
+  isMapOpen.value = false;
+}
+
+watch(isMapOpen, async (isOpen) => {
+  await nextTick();
+
+  if (isOpen) {
+    closeButton.value?.focus();
+    return;
+  }
+
+  mapButton.value?.focus();
+});
 </script>

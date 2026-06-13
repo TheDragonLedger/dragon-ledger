@@ -1,6 +1,15 @@
 <template>
   <Navbar />
   <router-view class="app-view" />
+  <button
+    v-if="showBackToTop"
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    @click="scrollToTop"
+  >
+    ↑ Top
+  </button>
   <footer class="site-footer">
     <div class="site-footer-inner">
       <p>
@@ -14,7 +23,34 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted, ref } from "vue";
 import Navbar from "./components/layout/Navbar.vue";
+
+const showBackToTop = ref(false);
+
+function updateBackToTop() {
+  showBackToTop.value = window.scrollY > 520;
+}
+
+function scrollToTop() {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  window.scrollTo({
+    top: 0,
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+  });
+}
+
+onMounted(() => {
+  updateBackToTop();
+  window.addEventListener("scroll", updateBackToTop, { passive: true });
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", updateBackToTop);
+});
 </script>
 
 <style>
