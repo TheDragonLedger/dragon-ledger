@@ -48,4 +48,11 @@ export const journalEntries = [
     excerpt:
       "Query letters began to leave the archive, carrying The Dragon's Choice toward the possibility of a publishing home. After years of trying, shaping, and returning, the story finally began knocking on doors beyond its own world.",
   },
+  {
+    title: "The Second Door Opens",
+    period: "Book Two begins",
+    motif: "A path beyond the threshold",
+    excerpt:
+      "Book Two begins to take shape, one quiet chapter at a time. After years spent finding Emilia, Ash, and the world around them, the story continues forward: new choices, deeper wounds, and another path beginning beneath the surface of everything already built.",
+  },
 ];
