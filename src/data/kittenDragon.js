@@ -1,6 +1,7 @@
 import kittenDragonStart from "../assets/kitten-dragon-start.png";
 import kittenDragonBreakfast from "../assets/kitten-daydreaming-dragon-breakfast.png";
 import kittenCold from "../assets/kitten-cold.png";
+import kittenDragonSleepingCouch from "../assets/kitten-dragon-sleeping-couch.png";
 
 export const kittenDragonEntries = [
   {
@@ -56,6 +57,21 @@ export const kittenDragonEntries = [
       "A soft purr escaped her.",
       "Smiling, Kitten tucked the note inside her journal before returning to her book, her coffee, and the warmth of the evening.",
       "Outside, the rain continued to fall. Inside, everything felt just right.",
+    ],
+  },
+  {
+    slug: "one-quiet-day-at-a-time",
+    title: "One Quiet Day at a Time",
+    mood: "Evening rest",
+    image: kittenDragonSleepingCouch,
+    summary: "A quiet evening, a favorite blanket, and the comfort of falling asleep beside the one who feels like home.",
+    story: [
+      "As the days grew shorter and colder, Kitten and Dragon tried to get home early whenever they could.",
+      "Kitten's days were often busy, and Dragon knew how much she appreciated a little peace and quiet after long hours away from home.",
+      "On days like today, she would arrive with dark circles under her eyes, and he would already have everything waiting for her: a small snack, a warm mug of coffee, and a place beside him under her favorite blanket.",
+      "Sometimes they would read together. Sometimes they would simply talk about their days.",
+      "Kitten would smile, cuddle closer to her big dragon, and quietly enjoy his presence.",
+      "And on days like today, they would both fall asleep before they even realized it, listening to each other's heartbeat and dreaming about a future they would build together, one quiet day at a time.",
     ],
   },
 ];

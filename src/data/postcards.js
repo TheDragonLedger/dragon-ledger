@@ -1,4 +1,5 @@
 import emiliaUmbraFirstMeeting from "../assets/emilia-umbra-first-meeting.png";
+import emiliaStodWalkingHome from "../assets/emilia-stod-walking-home.png";
 import waitingForTom from "../assets/waiting-for-tom.png";
 
 export const postcardEntries = [
@@ -26,6 +27,24 @@ export const postcardEntries = [
     story: [
       "Before responsibilities, expectations, and years changed the shape of their relationship, Emilia spent many afternoons waiting by the front door of Varelli Manor for her brother to come home from school.",
       "For a little girl of five, there was no better part of the day.",
+    ],
+  },
+  {
+    slug: "walking-home-with-stod",
+    title: "Walking Home With Stod",
+    mood: "Chosen family",
+    image: emiliaStodWalkingHome,
+    summary: "After school walks, silly jokes, and the quiet beginning of a friendship that became home.",
+    story: [
+      "As Emilia grew older, she slowly began to understand that growing up also meant carrying expectations she wasn't always ready for.",
+      "Then she met Stod, the boy who lived next door.",
+      "From that day on, he walked her home after school, filled their afternoons with silly jokes, and somehow made ordinary days feel lighter.",
+      "Over time, he became the brother life had chosen for her.",
+      "The one who stood beside her during her lowest moments.",
+      "The one who celebrated her successes as if they were his own.",
+      "Some people do not arrive with grand gestures.",
+      "Sometimes, they simply start walking beside you.",
+      "And one day, without realizing it, they have become part of your home.",
     ],
   },
 ];
