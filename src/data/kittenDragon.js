@@ -76,7 +76,11 @@ export const kittenDragonEntries = [
   },
 ];
 
-export const kittenDragonStoriesNewestFirst = [...kittenDragonEntries].reverse();
+export const kittenDragonBeginning = kittenDragonEntries[0];
+export const kittenDragonStoryEntries = kittenDragonEntries.slice(1);
+export const kittenDragonStoriesNewestFirst = [
+  ...kittenDragonStoryEntries,
+].reverse();
 
 export function findKittenDragonStory(slug) {
   return kittenDragonEntries.find((entry) => entry.slug === slug);

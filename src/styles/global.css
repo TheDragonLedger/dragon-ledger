@@ -556,17 +556,94 @@ img {
   margin-top: 1rem;
 }
 
+.kitten-beginning {
+  display: grid;
+  grid-template-columns: minmax(13rem, 20rem) minmax(0, 1fr);
+  gap: clamp(1.4rem, 4vw, 3rem);
+  align-items: center;
+  width: min(100%, 52rem);
+  margin: 0 auto 4rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid rgba(215, 184, 147, 0.14);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at top left, rgba(127, 47, 39, 0.18), transparent 18rem),
+    radial-gradient(circle at bottom right, rgba(215, 184, 147, 0.1), transparent 16rem),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(14, 13, 12, 0.74);
+  box-shadow:
+    0 1.25rem 3.5rem rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(215, 184, 147, 0.07);
+}
+
+.kitten-beginning-poster {
+  width: 100%;
+  max-width: 20rem;
+  justify-self: center;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.kitten-beginning-poster img {
+  width: 100%;
+  border: 1px solid rgba(215, 184, 147, 0.22);
+  border-radius: 7px;
+  box-shadow:
+    0 1rem 2.5rem rgba(0, 0, 0, 0.42),
+    0 0 2.5rem rgba(127, 47, 39, 0.14);
+  transition:
+    border-color 0.25s ease,
+    filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+.kitten-beginning-poster:hover img {
+  border-color: rgba(215, 184, 147, 0.38);
+  filter: brightness(1.06);
+  transform: scale(1.01);
+}
+
+.kitten-beginning-text {
+  max-width: 28rem;
+}
+
+.kitten-beginning-text h2 {
+  margin-bottom: 1rem;
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.kitten-beginning-text p:not(.card-eyebrow) {
+  color: rgba(245, 241, 234, 0.78);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.kitten-stories-heading {
+  width: min(100%, 60rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .kitten-story-shelf {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11.5rem), 14rem));
-  justify-content: start;
-  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  width: min(100%, 60rem);
+  margin: 0 auto;
 }
 
 .kitten-story-card {
   display: grid;
+  align-content: start;
   min-height: 100%;
-  padding: 0.78rem;
+  padding: 0.85rem;
   border: 1px solid rgba(215, 184, 147, 0.14);
   border-radius: 8px;
   background:
@@ -582,8 +659,8 @@ img {
 }
 
 .kitten-story-card:hover {
-  border-color: rgba(215, 184, 147, 0.28);
-  transform: translateY(-2px);
+  border-color: rgba(215, 184, 147, 0.3);
+  transform: translateY(-3px);
   box-shadow:
     0 1.5rem 4rem rgba(0, 0, 0, 0.24),
     0 0 2rem rgba(127, 47, 39, 0.08);
@@ -591,19 +668,27 @@ img {
 
 .kitten-story-card img {
   width: 100%;
-  margin-bottom: 0.78rem;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 0.9rem;
   border: 1px solid rgba(215, 184, 147, 0.18);
   border-radius: 6px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
 .kitten-story-card h2 {
+  margin-bottom: 0.55rem;
   color: #fff8ef;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+  font-size: clamp(1.45rem, 2.4vw, 1.8rem);
   font-weight: 600;
   line-height: 1.05;
+}
+
+.kitten-story-card p:not(.card-eyebrow) {
+  color: rgba(245, 241, 234, 0.68);
+  font-size: 0.86rem;
+  line-height: 1.65;
 }
 
 .kitten-story-list {
@@ -1583,6 +1668,21 @@ blockquote {
   .journey-card-marker {
     width: 2.25rem;
     height: 2.25rem;
+  }
+
+  .kitten-beginning {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .kitten-beginning-text {
+    max-width: none;
+    text-align: center;
+  }
+
+  .kitten-story-shelf {
+    grid-template-columns: 1fr;
   }
 
   .kitten-story {
