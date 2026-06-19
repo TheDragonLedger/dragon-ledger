@@ -17,7 +17,16 @@
         characters, locations, and related original material are owned by Emilia
         Murphy. All rights reserved.
       </p>
-      <a href="mailto:thedragonledger@gmail.com">thedragonledger@gmail.com</a>
+      <div class="site-footer-links">
+        <a href="mailto:thedragonledger@gmail.com">thedragonledger@gmail.com</a>
+        <a
+          href="https://www.instagram.com/thedragonledger/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram: @thedragonledger
+        </a>
+      </div>
     </div>
   </footer>
 </template>
