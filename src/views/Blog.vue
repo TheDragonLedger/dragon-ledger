@@ -15,16 +15,42 @@
         v-for="(entry, index) in journalEntriesNewestFirst"
         :key="entry.title"
         class="journey-card"
+        :class="{ 'is-expanded': isExpanded(entry) }"
       >
-        <div class="journey-card-marker">
-          {{ getJourneyNumber(index) }}
-        </div>
+        <button
+          class="journey-card-toggle"
+          type="button"
+          :aria-expanded="isExpanded(entry)"
+          :aria-controls="getDetailId(entry)"
+          @click="toggleEntry(entry)"
+        >
+          <span class="journey-card-marker">
+            {{ getJourneyNumber(index) }}
+          </span>
 
-        <div class="journey-card-content">
-          <p class="card-eyebrow">{{ entry.period }}</p>
-          <h2>{{ entry.title }}</h2>
-          <p class="journey-motif">{{ entry.motif }}</p>
-          <p>{{ entry.excerpt }}</p>
+          <span class="journey-card-content">
+            <span class="card-eyebrow">{{ entry.period }}</span>
+            <span class="journey-card-title">{{ entry.title }}</span>
+            <span class="journey-motif">{{ entry.motif }}</span>
+            <span class="journey-excerpt">{{ entry.excerpt }}</span>
+            <span v-if="entry.details" class="journey-read-more">
+              {{ isExpanded(entry) ? "Close entry" : "Read the full fragment" }}
+            </span>
+          </span>
+        </button>
+
+        <div
+          v-if="entry.details && isExpanded(entry)"
+          :id="getDetailId(entry)"
+          class="journey-card-detail"
+        >
+          <p
+            v-for="detail in entry.details"
+            :key="detail.text"
+            :class="{ 'journey-detail-emphasis': detail.emphasis }"
+          >
+            {{ detail.text }}
+          </p>
         </div>
       </article>
     </section>
@@ -32,11 +58,29 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { journalEntries } from "../data/journal";
 
 const journalEntriesNewestFirst = [...journalEntries].reverse();
+const expandedEntries = ref([]);
 
 function getJourneyNumber(index) {
   return String(journalEntries.length - index).padStart(2, "0");
+}
+
+function getDetailId(entry) {
+  return `journey-detail-${entry.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+}
+
+function isExpanded(entry) {
+  return expandedEntries.value.includes(entry.title);
+}
+
+function toggleEntry(entry) {
+  if (!entry.details) return;
+
+  expandedEntries.value = isExpanded(entry)
+    ? expandedEntries.value.filter((title) => title !== entry.title)
+    : [...expandedEntries.value, entry.title];
 }
 </script>
