@@ -20,6 +20,9 @@
         <img
           :src="kittenDragonBeginning.image"
           :alt="`${kittenDragonBeginning.title} poster`"
+          width="1024"
+          height="1536"
+          fetchpriority="high"
         />
       </button>
 
