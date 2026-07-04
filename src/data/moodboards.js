@@ -1,5 +1,5 @@
-import dragonsHomeMoodboard from "../assets/dragons-home-moodboard.png";
-import varelliFamilyMoodboard from "../assets/varelli-family-moodboard.png";
+import dragonsHomeMoodboard from "../assets/dragons-home-moodboard.webp";
+import varelliFamilyMoodboard from "../assets/varelli-family-moodboard.webp";
 
 export const moodboards = [
   {

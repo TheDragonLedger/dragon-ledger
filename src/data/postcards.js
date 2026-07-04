@@ -1,6 +1,6 @@
-import emiliaUmbraFirstMeeting from "../assets/emilia-umbra-first-meeting.png";
-import emiliaStodWalkingHome from "../assets/emilia-stod-walking-home.png";
-import waitingForTom from "../assets/waiting-for-tom.png";
+import emiliaUmbraFirstMeeting from "../assets/emilia-umbra-first-meeting.webp";
+import emiliaStodWalkingHome from "../assets/emilia-stod-walking-home.webp";
+import waitingForTom from "../assets/waiting-for-tom.webp";
 
 export const postcardEntries = [
   {

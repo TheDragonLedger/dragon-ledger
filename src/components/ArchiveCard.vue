@@ -15,6 +15,13 @@
         :alt="imageAlt || title"
       />
     </button>
+    <div
+      v-else-if="imagePlaceholder"
+      class="card-image-placeholder"
+      aria-hidden="true"
+    >
+      <span>Image pending</span>
+    </div>
     <p v-if="eyebrow" class="card-eyebrow">{{ eyebrow }}</p>
     <h2>{{ title }}</h2>
     <div class="card-body">
@@ -62,12 +69,13 @@ const props = defineProps({
     required: true,
   },
   body: {
-    type: String,
+    type: [String, Array],
     required: true,
   },
   image: String,
   imageAlt: String,
   imageVariant: String,
+  imagePlaceholder: Boolean,
 });
 
 const isImageOpen = ref(false);

@@ -1,9 +1,9 @@
-import dawnWing from "../assets/dawn-wing.png";
-import emiliasApartment from "../assets/emilias-apartment.png";
-import gamingRoom from "../assets/gaming-room.png";
-import valenHouse from "../assets/valen-house.png";
-import varelliIndustrialWork from "../assets/varelli-industrial-work.png";
-import varelliManor from "../assets/varelli-manor.png";
+import dawnWing from "../assets/dawn-wing.webp";
+import emiliasApartment from "../assets/emilias-apartment.webp";
+import gamingRoom from "../assets/gaming-room.webp";
+import valenHouse from "../assets/valen-house.webp";
+import varelliIndustrialWork from "../assets/varelli-industrial-work.webp";
+import varelliManor from "../assets/varelli-manor.webp";
 
 export const archiveLocations = [
   {

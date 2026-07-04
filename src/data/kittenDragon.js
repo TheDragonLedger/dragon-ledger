@@ -1,7 +1,8 @@
-import kittenDragonStart from "../assets/kitten-dragon-start.png";
-import kittenDragonBreakfast from "../assets/kitten-daydreaming-dragon-breakfast.png";
-import kittenCold from "../assets/kitten-cold.png";
-import kittenDragonSleepingCouch from "../assets/kitten-dragon-sleeping-couch.png";
+import kittenDragonStart from "../assets/kitten-dragon-start.webp";
+import kittenDragonBreakfast from "../assets/kitten-daydreaming-dragon-breakfast.webp";
+import kittenCold from "../assets/kitten-cold.webp";
+import kittenDragonSleepingCouch from "../assets/kitten-dragon-sleeping-couch.webp";
+import kittenDragonDancingStars from "../assets/kitten-dragon-dancing-stars.webp";
 
 export const kittenDragonEntries = [
   {
@@ -72,6 +73,34 @@ export const kittenDragonEntries = [
       "Sometimes they would read together. Sometimes they would simply talk about their days.",
       "Kitten would smile, cuddle closer to her big dragon, and quietly enjoy his presence.",
       "And on days like today, they would both fall asleep before they even realized it, listening to each other's heartbeat and dreaming about a future they would build together, one quiet day at a time.",
+    ],
+  },
+  {
+    slug: "the-dance-beneath-the-stars",
+    title: "The Dance Beneath the Stars",
+    mood: "Starlit magic",
+    image: kittenDragonDancingStars,
+    summary:
+      "A cold garden night, a dance beneath lantern light, and a promise that every flight still returns home.",
+    story: [
+      "Sitting in the garden and watching the stars was one of Kitten's favorite ways to relax after a long day, even on cold nights like this one.",
+      "She loved searching for constellations and tracing imaginary dragons across the sky. Sometimes, she would close her eyes and imagine she had wings of her own.",
+      "In her dreams, she could follow Dragon through the clouds, circling around him as he tried to catch her. He never could. She was smaller, quicker, and always just out of reach.",
+      "\"Would you give me the pleasure of this dance, my beautiful feline?\"",
+      "Kitten opened her eyes and smiled.",
+      "Dragon stood before her, offering his hand with a playful bow.",
+      "\"Always, my love.\"",
+      "Dancing with Dragon beneath the stars felt like magic.",
+      "Sometimes he would lift her into his arms and spin her around. Sometimes he would simply hold her close while they swayed beneath the lantern lights. And sometimes he would whisper sweet nothings into her ear that left her smiling for days afterward.",
+      "\"Were you daydreaming about flying again?\" Dragon asked softly.",
+      "\"A little,\" Kitten admitted. \"I just wish I could follow you and see the world from the sky.\"",
+      "Dragon gently rested his forehead against hers.",
+      "\"Being with you is the thing I enjoy most. No matter how far I fly, I will always come back to you.\"",
+      "Kitten smiled.",
+      "\"I love you.\"",
+      "Dragon's eyes sparkled.",
+      "\"I love you more.\"",
+      "And as the night carried on around them, Kitten and her Dragon continued to dance beneath the stars, dreaming of distant lands, adventures beyond the clouds, and the home they would always return to together.",
     ],
   },
 ];

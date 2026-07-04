@@ -78,20 +78,13 @@
     </Teleport>
 
     <section class="section-heading">
-      <p class="subtitle">Countries</p>
-      <h2>Realms</h2>
+      <p class="subtitle">Countries / Realms</p>
+      <h2>The Three Realms</h2>
     </section>
 
     <section class="content-grid archive-entry-grid">
-      <ArchiveCard
-        v-if="countries.length === 0"
-        title="Country entries coming soon"
-        body="Countries, cities, regions, and landmarks will gather here as the world opens further."
-      />
-
       <router-link
         v-for="country in countries"
-        v-else
         :key="country.title"
         :to="`/archive/places-of-the-world/${country.slug}`"
         class="card-link"
@@ -107,33 +100,38 @@
     </section>
 
     <section class="section-heading">
-      <p class="subtitle">Waters</p>
-      <h2>Crossroads</h2>
+      <p class="subtitle">Waters Between Realms</p>
+      <h2>The Seas</h2>
     </section>
 
-    <section class="content-grid archive-entry-grid world-water-grid">
+    <section class="content-grid archive-entry-grid">
       <router-link
-        v-for="water in waters"
-        :key="water.title"
-        :to="`/archive/places-of-the-world/${water.slug}`"
+        v-for="sea in waters"
+        :key="sea.title"
+        :to="`/archive/places-of-the-world/${sea.slug}`"
         class="card-link"
       >
         <ArchiveCard
-          :title="water.title"
-          :eyebrow="water.category"
-          :body="water.description"
-          :image="water.image"
-          :image-alt="`${water.title} landscape`"
+          :title="sea.title"
+          :eyebrow="sea.category"
+          :body="sea.description"
+          :image="sea.image"
+          :image-alt="`${sea.title} seascape`"
         />
       </router-link>
     </section>
+
   </main>
 </template>
 
 <script setup>
 import { nextTick, ref, watch } from "vue";
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { countries, waters, worldOverview } from "../data/worldPlaces";
+import {
+  countries,
+  waters,
+  worldOverview,
+} from "../data/worldPlaces";
 
 const isMapOpen = ref(false);
 const mapButton = ref(null);

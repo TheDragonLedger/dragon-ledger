@@ -37,6 +37,31 @@
       />
     </section>
 
+    <template v-if="place">
+      <section
+        v-for="section in countryAtlasSections"
+        :key="section.title"
+      >
+        <div class="section-heading">
+          <p class="subtitle">{{ section.category }}</p>
+          <h2>{{ section.title }}</h2>
+        </div>
+
+        <div class="content-grid archive-entry-grid">
+          <ArchiveCard
+            v-for="entry in section.entries"
+            :key="entry.title"
+            :title="entry.title"
+            :eyebrow="entry.category"
+            :body="entry.description"
+            :image="entry.image"
+            :image-alt="`${entry.title} atlas entry`"
+            :image-placeholder="!entry.image"
+          />
+        </div>
+      </section>
+    </template>
+
     <section
       v-else
       class="content-grid"
@@ -54,10 +79,13 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 import ArchiveCard from "../components/ArchiveCard.vue";
-import { placeEntries } from "../data/worldPlaces";
+import { getCountryAtlasSections, placeEntries } from "../data/worldPlaces";
 
 const route = useRoute();
 const place = computed(() =>
   placeEntries.find((entry) => entry.slug === route.params.slug),
+);
+const countryAtlasSections = computed(() =>
+  place.value ? getCountryAtlasSections(place.value.slug) : [],
 );
 </script>

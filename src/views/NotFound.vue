@@ -25,7 +25,7 @@
 
 <script setup>
 import { useRouter } from "vue-router";
-import notFoundImage from "../assets/not-found-kitten-dragon.png";
+import notFoundImage from "../assets/not-found-kitten-dragon.webp";
 
 const router = useRouter();
 

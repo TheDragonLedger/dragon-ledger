@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import siteLogo from "../../assets/dragon-ledger-logo.png";
+import siteLogo from "../../assets/dragon-ledger-logo.webp";
 </script>
 
 <style scoped>

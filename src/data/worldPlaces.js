@@ -1,11 +1,31 @@
-import elariaImage from "../assets/elaria.png";
-import elariaMap from "../assets/elaria-map.png";
-import endlessSeaImage from "../assets/endless-sea.png";
-import tharvaneImage from "../assets/tharvane.png";
-import tharvaneMap from "../assets/tharvane-map.png";
-import threeRealmsMap from "../assets/three-realms-map.png";
-import virekhalImage from "../assets/virekhal.png";
-import virekhalMap from "../assets/virekhal-map.png";
+import ashenWastesImage from "../assets/ashen-wastes.webp";
+import caelisImage from "../assets/caelis.webp";
+import cinderholdImage from "../assets/cinderhold.webp";
+import crownwatchImage from "../assets/crownwatch.webp";
+import dravethImage from "../assets/draveth.webp";
+import elariaImage from "../assets/elaria.webp";
+import elariaMap from "../assets/elaria-map.webp";
+import endlessSeaImage from "../assets/endless-sea.webp";
+import frostwardPeaksImage from "../assets/frostward-peaks.webp";
+import harborwatchImage from "../assets/harborwatch.webp";
+import ironwatchImage from "../assets/ironwatch.webp";
+import kelvarisImage from "../assets/kelvaris.webp";
+import khazeremImage from "../assets/khazerem.webp";
+import korvathImage from "../assets/korvath.webp";
+import mirelImage from "../assets/mirel.webp";
+import qiranImage from "../assets/qiran.webp";
+import sandseaImage from "../assets/sandsea.webp";
+import shatteredSeaImage from "../assets/shattered-sea.webp";
+import silverShoresImage from "../assets/silver-shores.webp";
+import tharvaneImage from "../assets/tharvane.webp";
+import tharvaneMap from "../assets/tharvane-map.webp";
+import theHollowImage from "../assets/the-hollow.webp";
+import threeRealmsMap from "../assets/three-realms-map.webp";
+import valmereImage from "../assets/valmere.webp";
+import virekhalImage from "../assets/virekhal.webp";
+import virekhalMap from "../assets/virekhal-map.webp";
+import voranashImage from "../assets/voranash.webp";
+import whiteholdImage from "../assets/whitehold.webp";
 
 export const worldOverview = {
   title: "The Three Realms",
@@ -48,7 +68,7 @@ export const countries = [
   {
     title: "Elaria",
     slug: "elaria",
-    category: "Country",
+    category: "Country / Realm",
     image: elariaImage,
     map: elariaMap,
     description: [
@@ -60,7 +80,7 @@ export const countries = [
   {
     title: "Virekhal",
     slug: "virekhal",
-    category: "Country",
+    category: "Country / Realm",
     image: virekhalImage,
     map: virekhalMap,
     description: [
@@ -72,7 +92,7 @@ export const countries = [
   {
     title: "Tharvane",
     slug: "tharvane",
-    category: "Country",
+    category: "Country / Realm",
     image: tharvaneImage,
     map: tharvaneMap,
     description: [
@@ -95,7 +115,215 @@ export const waters = [
       "Some journeys begin on these waters.",
     ],
   },
+  {
+    title: "The Shattered Sea",
+    slug: "shattered-sea",
+    category: "Sea",
+    image: shatteredSeaImage,
+    description: [
+      "Between Virekhal and Tharvane lies the Shattered Sea, a cold and difficult stretch of water marked by distance, trade, and guarded crossings.",
+      "Its routes carry travelers, military movements, old tensions, and the quiet understanding that no realm stands entirely alone.",
+    ],
+  },
 ];
+
+export const citiesAndSettlements = [
+  {
+    title: "Caelis",
+    realm: "elaria",
+    category: "Capital city",
+    image: caelisImage,
+    description:
+      "The capital of Elaria. A future entry for courtly power, old streets, public life, and the green realm's political heart.",
+  },
+  {
+    title: "Valmere",
+    realm: "elaria",
+    category: "Major city",
+    image: valmereImage,
+    description:
+      "A central Elarian city marked on the realm map. Its fuller history, atmosphere, and role in the wider world will be recorded later.",
+  },
+  {
+    title: "Mirel",
+    realm: "elaria",
+    category: "Major city",
+    image: mirelImage,
+    description:
+      "An Elarian city waiting for its fuller record: streets, customs, nearby roads, and the people who pass through.",
+  },
+  {
+    title: "Draveth",
+    realm: "virekhal",
+    category: "Capital city",
+    image: dravethImage,
+    description:
+      "The capital of Virekhal. A city shaped by heat, endurance, law, and the long memory of a realm forged beneath an unforgiving sun.",
+  },
+  {
+    title: "Kelvaris",
+    realm: "virekhal",
+    category: "Major city",
+    image: kelvarisImage,
+    description:
+      "A Virekhal city shaped by heat, endurance, and the routes that cross a difficult land. Details will be expanded as the realm opens.",
+  },
+  {
+    title: "Korvath",
+    realm: "virekhal",
+    category: "Major city",
+    image: korvathImage,
+    description:
+      "A Virekhal city held for future atlas notes on trade, survival, loyalties, and the hard beauty of desert roads.",
+  },
+  {
+    title: "Khazerem",
+    realm: "tharvane",
+    category: "Capital city",
+    image: khazeremImage,
+    description:
+      "The capital of Tharvane. A northern seat of power where ice, tradition, and restraint shape the architecture of daily life.",
+  },
+  {
+    title: "Voranash",
+    realm: "tharvane",
+    category: "Major city",
+    image: voranashImage,
+    description:
+      "A Tharvane city waiting for its record of frozen roads, old customs, guarded warmth, and northern resilience.",
+  },
+  {
+    title: "Qiran",
+    realm: "tharvane",
+    category: "Major city",
+    image: qiranImage,
+    description:
+      "A Tharvane city held in reserve for future notes on sea ice, distance, silence, and the bonds that survive cold places.",
+  },
+];
+
+export const regionsAndLandmarks = [
+  {
+    title: "Frostward Peaks",
+    realm: "elaria",
+    category: "Mountain range",
+    image: frostwardPeaksImage,
+    description:
+      "A vast northern mountain region in Elaria, where snow, forests, and old roads shape the edge of the green realm.",
+  },
+  {
+    title: "Silver Shores",
+    realm: "elaria",
+    category: "Coastal region",
+    image: silverShoresImage,
+    description:
+      "Elaria's bright sea-facing coast, reserved for future notes on ports, shoreline towns, trade, and salt-warm horizons.",
+  },
+  {
+    title: "The Ashen Wastes",
+    realm: "virekhal",
+    category: "Desert region",
+    image: ashenWastesImage,
+    description:
+      "A severe expanse in Virekhal, shaped by heat, distance, and the kind of survival that leaves stories in the sand.",
+  },
+  {
+    title: "The Sandsea",
+    realm: "tharvane",
+    category: "Frozen coastal region",
+    image: sandseaImage,
+    description:
+      "A stark Tharvane region whose full nature will be defined later: shore, ice, silence, and the difficulty of passage.",
+  },
+  ...waters,
+];
+
+export const institutionsAndLandmarks = [
+  {
+    title: "Whitehold",
+    realm: "elaria",
+    category: "Prison",
+    image: whiteholdImage,
+    description:
+      "Elaria's prison entry, waiting for its full record: walls, purpose, history, and the lives shaped by confinement.",
+  },
+  {
+    title: "The Harborwatch",
+    realm: "elaria",
+    category: "Military base",
+    image: harborwatchImage,
+    description:
+      "An Elarian military base tied to watchfulness, routes, ports, and the guarded edges of the realm.",
+  },
+  {
+    title: "Cinderhold",
+    realm: "virekhal",
+    category: "Prison",
+    image: cinderholdImage,
+    description:
+      "Virekhal's prison entry, held for future notes on discipline, punishment, endurance, and the heat of unforgiving walls.",
+  },
+  {
+    title: "The Ironwatch",
+    realm: "virekhal",
+    category: "Military base",
+    image: ironwatchImage,
+    description:
+      "A Virekhal military base marked by vigilance, harsh terrain, and the realm's old instinct to endure.",
+  },
+  {
+    title: "The Hollow",
+    realm: "tharvane",
+    category: "Prison",
+    image: theHollowImage,
+    description:
+      "Tharvane's prison entry, waiting for its full record of cold stone, silence, restraint, and the names carried inside.",
+  },
+  {
+    title: "The Crownwatch",
+    realm: "tharvane",
+    category: "Military base",
+    image: crownwatchImage,
+    description:
+      "A Tharvane military base shaped by duty, winter, tradition, and the watchful protection of a northern realm.",
+  },
+];
+
+export function getCountryAtlasSections(countrySlug) {
+  const sections = [
+    {
+      title: "Cities & Settlements",
+      category: "Marked on the Atlas",
+      entries: citiesAndSettlements,
+    },
+    {
+      title: "Geography",
+      category: "Regions and Natural Landmarks",
+      entries: regionsAndLandmarks,
+    },
+    {
+      title: "Prisons",
+      category: "Institutions",
+      entries: institutionsAndLandmarks.filter(
+        (entry) => entry.category === "Prison",
+      ),
+    },
+    {
+      title: "Military Bases",
+      category: "Institutions",
+      entries: institutionsAndLandmarks.filter(
+        (entry) => entry.category === "Military base",
+      ),
+    },
+  ];
+
+  return sections
+    .map((section) => ({
+      ...section,
+      entries: section.entries.filter((entry) => entry.realm === countrySlug),
+    }))
+    .filter((section) => section.entries.length > 0);
+}
 
 export const placeEntries = [...countries, ...waters];
 

@@ -1,4 +1,4 @@
-import dragonsChoiceCover from "../assets/the-dragons-choice-cover.png";
+import dragonsChoiceCover from "../assets/the-dragons-choice-cover.webp";
 
 export const books = [
   {

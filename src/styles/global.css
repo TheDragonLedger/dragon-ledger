@@ -854,6 +854,27 @@ img {
     transform 0.25s ease;
 }
 
+.card-image-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0 0 1.1rem;
+  border: 1px solid rgba(215, 184, 147, 0.12);
+  border-radius: 6px;
+  background:
+    radial-gradient(circle at 24% 18%, rgba(215, 184, 147, 0.09), transparent 9rem),
+    radial-gradient(circle at 80% 90%, rgba(44, 73, 96, 0.1), transparent 10rem),
+    rgba(8, 8, 9, 0.34);
+}
+
+.card-image-placeholder span {
+  color: rgba(215, 184, 147, 0.62);
+  font-size: 0.72rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+}
+
 .card-image-cover {
   max-width: 18rem;
   aspect-ratio: 2 / 3;
