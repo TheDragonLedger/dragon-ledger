@@ -34,6 +34,7 @@
         body="A closer view of the realm's cities, landmarks, roads, and surrounding waters."
         :image="place.map"
         :image-alt="`${place.title} map`"
+        image-variant="map"
       />
     </section>
 

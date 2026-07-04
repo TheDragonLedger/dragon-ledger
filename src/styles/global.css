@@ -883,6 +883,14 @@ img {
   object-position: center;
 }
 
+.card-image-map {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(8, 8, 9, 0.58);
+}
+
 .image-lightbox {
   position: fixed;
   z-index: 1000;

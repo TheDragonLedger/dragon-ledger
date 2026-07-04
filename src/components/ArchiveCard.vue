@@ -10,7 +10,10 @@
     >
       <img
         class="card-image"
-        :class="{ 'card-image-cover': imageVariant === 'cover' }"
+        :class="{
+          'card-image-cover': imageVariant === 'cover',
+          'card-image-map': imageVariant === 'map',
+        }"
         :src="image"
         :alt="imageAlt || title"
       />
