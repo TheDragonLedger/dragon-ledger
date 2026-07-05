@@ -25,6 +25,10 @@
               class="world-map-image"
               :src="worldOverview.image"
               :alt="`${worldOverview.title} map`"
+              width="1414"
+              height="1112"
+              fetchpriority="high"
+              decoding="async"
             />
           </button>
           <router-link

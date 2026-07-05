@@ -304,8 +304,10 @@ img {
 }
 
 .world-map-image {
+  display: block;
   width: 100%;
-  aspect-ratio: 1402 / 1122;
+  height: auto;
+  aspect-ratio: 1414 / 1112;
   object-fit: contain;
   background: rgba(8, 8, 9, 0.58);
 }
@@ -826,6 +828,7 @@ img {
 }
 
 .card-image-button {
+  display: block;
   width: 100%;
   margin: 0 0 1.1rem;
   padding: 0;
@@ -835,6 +838,11 @@ img {
   cursor: zoom-in;
 }
 
+.card-image-button-map {
+  aspect-ratio: 1122 / 1402;
+  background: rgba(8, 8, 9, 0.58);
+}
+
 .card-image-button:hover .card-image {
   border-color: rgba(215, 184, 147, 0.34);
   filter: brightness(1.08);
@@ -842,6 +850,7 @@ img {
 }
 
 .card-image {
+  display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: 6px;
@@ -884,8 +893,7 @@ img {
 }
 
 .card-image-map {
-  aspect-ratio: auto;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   object-position: center;
   background: rgba(8, 8, 9, 0.58);

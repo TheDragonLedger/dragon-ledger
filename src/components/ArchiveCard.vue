@@ -4,6 +4,9 @@
       v-if="image"
       ref="imageButton"
       class="card-image-button"
+      :class="{
+        'card-image-button-map': imageVariant === 'map',
+      }"
       type="button"
       :aria-label="`Open ${title} image`"
       @click="isImageOpen = true"
