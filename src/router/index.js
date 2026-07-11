@@ -8,6 +8,8 @@ import PostcardDetail from "../views/PostcardDetail.vue";
 import World from "../views/World.vue";
 import ArchiveLocations from "../views/ArchiveLocations.vue";
 import ArchiveMoodboards from "../views/ArchiveMoodboards.vue";
+import ArchiveRealmHeraldry from "../views/ArchiveRealmHeraldry.vue";
+import ArchiveRealmsHeraldry from "../views/ArchiveRealmsHeraldry.vue";
 import ArchiveCountry from "../views/ArchiveCountry.vue";
 import ArchiveWorldPlaces from "../views/ArchiveWorldPlaces.vue";
 import KittenDragon from "../views/KittenDragon.vue";
@@ -71,6 +73,16 @@ const routes = [
     path: "/archive/places-of-the-world/:slug",
     name: "ArchiveCountry",
     component: ArchiveCountry,
+  },
+  {
+    path: "/archive/realms-heraldry",
+    name: "ArchiveRealmsHeraldry",
+    component: ArchiveRealmsHeraldry,
+  },
+  {
+    path: "/archive/realms-heraldry/:slug",
+    name: "ArchiveRealmHeraldry",
+    component: ArchiveRealmHeraldry,
   },
   {
     path: "/kitten-dragon",

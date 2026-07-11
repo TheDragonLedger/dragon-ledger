@@ -17,4 +17,10 @@ export const archiveSections = [
     description:
       "Countries, cities, regions, and the broader geography unfolding beyond the intimate rooms of the story.",
   },
+  {
+    title: "Realms & Heraldry",
+    path: "/archive/realms-heraldry",
+    description:
+      "Governments, mottos, symbols, shields, and the public powers shaping Elaria, Virekhal, and Tharvane.",
+  },
 ];
