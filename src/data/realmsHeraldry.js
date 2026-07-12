@@ -40,27 +40,37 @@ export const realmsHeraldry = [
       "Even its most powerful families are expected to remember that influence is meant to shelter the realm, not stand above it.",
     ],
     government: {
-      label: "Council of Houses",
-      title: "Stewardship through influence and responsibility",
+      label: "Council of Five Families",
+      title: "Stewardship through contribution and responsibility",
       body: [
-        "Elaria is guided by a council formed from influential houses, civic representatives, and long-standing institutions. Decisions move slowly, but that slowness is meant to protect balance.",
-        "Power in Elaria is rarely loud. It is found in alliances, public trust, private negotiations, and the families whose choices shape industries, cities, and communities.",
+        "Elaria is ruled by a council of five families, each carrying a different responsibility within the realm. Their power is meant to come from service, stewardship, and the work that keeps Elaria alive.",
+        "Influence in Elaria is measured less by noble privilege than by contribution: industry, culture, diplomacy, food, water, defense, logistics, and the public trust that allows the realm to flourish.",
       ],
       entries: [
         {
-          name: "Council of Houses",
-          description:
-            "The public body where noble families, civic voices, and regional interests negotiate the realm's direction.",
-        },
-        {
           name: "House Valen",
           description:
-            "A family tied to industry, stability, and the quieter forms of protection that hold communities together.",
+            "Seat: Valmere. Industry, infrastructure, commerce, and technology. House Valen's factories, logistics networks, businesses, and innovations touch nearly every corner of Elaria. Symbolic value: Building.",
         },
         {
-          name: "House Varelli",
+          name: "House Mirelle",
           description:
-            "A powerful family associated with legacy, expectation, and the polished world Emilia was born into.",
+            "Seat: Mirel. Culture, arts, education, and historical preservation. The Mirelles safeguard Elaria's artistic soul, supporting artists, musicians, writers, scholars, and cultural institutions. Heir: Maia Mirelle. Symbolic value: Inspiration.",
+        },
+        {
+          name: "House Corvane",
+          description:
+            "Seat: Caelis. Diplomacy and foreign relations. House Corvane has represented Elaria abroad for generations through diplomats, negotiators, and ambassadors. Heir: Tea Corvane. Symbolic value: Understanding.",
+        },
+        {
+          name: "House Seren",
+          description:
+            "Seat: Caelis. Agriculture, waterways, and resource management. The Seren family oversees many of the systems that keep Elaria fed, from rivers and irrigation to agricultural regions. Symbolic value: Stewardship.",
+        },
+        {
+          name: "House Thornwell",
+          description:
+            "Seat: Caelis. Defense, logistics, and national security. The Thornwells coordinate defensive systems including Whitehold, Harborwatch, emergency planning, and national logistics. Symbolic value: Guardianship.",
         },
       ],
     },
