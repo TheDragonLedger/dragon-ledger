@@ -21,7 +21,7 @@
     </router-link>
 
     <template v-if="realm">
-      <section class="realm-detail-hero" aria-label="Realm overview">
+      <section class="realm-detail-hero" aria-label="Realm introduction">
         <ArchiveCard
           eyebrow="Realm overview"
           :title="realm.name"
@@ -40,21 +40,109 @@
           :image-alt="`${realm.name} map`"
           image-variant="map"
         />
-      </section>
 
-      <section class="realm-detail-grid" aria-label="Realm details">
         <ArchiveCard
+          class="realm-soul-card"
           eyebrow="Inner character"
           title="The Soul of the Realm"
           :body="realm.soul"
         />
+      </section>
 
+      <section class="realm-detail-grid" aria-label="Realm details">
         <ArchiveCard
+          class="government-card"
           :eyebrow="realm.government.label"
           :title="realm.government.title"
           :body="realm.government.body"
         >
-          <ul class="realm-entry-list">
+          <div v-if="realm.government.table" class="council-table-wrap">
+            <table class="council-table">
+              <thead>
+                <tr>
+                  <th>House</th>
+                  <th>Representative</th>
+                  <th>Heir</th>
+                  <th>Seat</th>
+                  <th>Sphere</th>
+                  <th>Symbolic Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="row in realm.government.table" :key="row.house">
+                  <td data-label="House">{{ row.house }}</td>
+                  <td data-label="Representative">{{ row.representative }}</td>
+                  <td data-label="Heir">{{ row.heir }}</td>
+                  <td data-label="Seat">{{ row.seat }}</td>
+                  <td data-label="Sphere">{{ row.sphere }}</td>
+                  <td data-label="Symbolic Value">{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div
+            v-if="realm.government.table"
+            class="council-house-grid"
+            aria-label="Council house records"
+          >
+            <article
+              v-for="entry in realm.government.entries"
+              :key="entry.name"
+              class="council-house-card"
+            >
+              <button
+                v-if="entry.heraldic"
+                class="council-heraldic-button"
+                type="button"
+                :aria-label="`Open ${entry.name} heraldic image`"
+                @click="
+                  openSymbol(
+                    { title: `${entry.name} Heraldic`, image: entry.heraldic },
+                    $event,
+                  )
+                "
+              >
+                <img
+                  class="council-heraldic-image"
+                  :src="entry.heraldic"
+                  :alt="`${entry.name} heraldic`"
+                  loading="lazy"
+                />
+              </button>
+              <div v-else class="council-heraldic-placeholder" aria-hidden="true">
+                <span>Heraldic pending</span>
+              </div>
+              <div class="council-house-content">
+                <h3>{{ entry.name }}</h3>
+                <dl class="council-detail-list">
+                  <div>
+                    <dt>Representative</dt>
+                    <dd>{{ entry.representative }}</dd>
+                  </div>
+                  <div>
+                    <dt>Heir</dt>
+                    <dd>{{ entry.heir }}</dd>
+                  </div>
+                  <div>
+                    <dt>Seat</dt>
+                    <dd>{{ entry.seat }}</dd>
+                  </div>
+                  <div>
+                    <dt>Sphere</dt>
+                    <dd>{{ entry.sphere }}</dd>
+                  </div>
+                  <div>
+                    <dt>Symbolic Value</dt>
+                    <dd>{{ entry.value }}</dd>
+                  </div>
+                </dl>
+                <p>{{ entry.description }}</p>
+              </div>
+            </article>
+          </div>
+
+          <ul v-else class="realm-entry-list">
             <li v-for="entry in realm.government.entries" :key="entry.name">
               <strong>{{ entry.name }}</strong>
               <span>{{ entry.description }}</span>
@@ -67,7 +155,39 @@
           :title="realm.heraldry.title"
           :body="realm.heraldry.body"
         >
-          <div class="realm-chip-row" aria-label="Heraldic motifs">
+          <div
+            v-if="realm.heraldry.records?.length"
+            class="realm-symbol-grid heraldry-record-grid"
+            aria-label="Elarian symbol records"
+          >
+            <article
+              v-for="symbol in realm.heraldry.records"
+              :key="symbol.title"
+              class="realm-symbol-card heraldry-record-card"
+            >
+              <button
+                class="realm-symbol-image-button"
+                type="button"
+                :aria-label="`Open ${symbol.title} image`"
+                @click="openSymbol(symbol, $event)"
+              >
+                <img
+                  :src="symbol.image"
+                  :alt="`${symbol.title} symbol`"
+                  class="realm-symbol-image"
+                  loading="lazy"
+                />
+              </button>
+              <p class="card-eyebrow">{{ symbol.label }}</p>
+              <h3>{{ symbol.title }}</h3>
+              <p>{{ symbol.description }}</p>
+            </article>
+          </div>
+          <div
+            v-else
+            class="realm-chip-row"
+            aria-label="Heraldic motifs"
+          >
             <span v-for="motif in realm.heraldry.motifs" :key="motif">
               {{ motif }}
             </span>

@@ -1716,7 +1716,7 @@ blockquote {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.78fr);
   gap: 1.2rem;
-  align-items: start;
+  align-items: stretch;
   margin: 2rem 0;
 }
 
@@ -1746,6 +1746,20 @@ blockquote {
 .realm-detail-hero .card-image-button-map {
   height: auto;
   aspect-ratio: 1122 / 1402;
+}
+
+.realm-detail-hero > .realm-soul-card {
+  grid-column: 1 / -1;
+}
+
+.realm-soul-card .card-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 0.75rem 1.5rem;
+}
+
+.realm-soul-card .card-body p + p {
+  margin-top: 0;
 }
 
 .realm-detail-grid {
@@ -1782,11 +1796,175 @@ blockquote {
   line-height: 1.65;
 }
 
+.realm-detail-grid > .government-card {
+  grid-column: 1 / -1;
+}
+
+.council-table-wrap {
+  width: 100%;
+  margin-top: 1.35rem;
+  overflow-x: auto;
+  border: 1px solid rgba(215, 184, 147, 0.14);
+  border-radius: 6px;
+  background: rgba(5, 5, 6, 0.22);
+}
+
+.council-table {
+  width: 100%;
+  min-width: 46rem;
+  border-collapse: collapse;
+  color: rgba(240, 223, 207, 0.82);
+  font-size: 0.9rem;
+}
+
+.council-table th,
+.council-table td {
+  padding: 0.85rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(215, 184, 147, 0.1);
+}
+
+.council-table th {
+  color: #fff8ef;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.council-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.council-table td:first-child,
+.council-table td:last-child {
+  color: #e8c89d;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.council-house-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.council-house-card {
+  display: grid;
+  grid-template-columns: minmax(6.25rem, 8rem) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(215, 184, 147, 0.13);
+  border-radius: 6px;
+  background:
+    linear-gradient(135deg, rgba(80, 30, 33, 0.2), transparent 54%),
+    rgba(8, 8, 9, 0.26);
+}
+
+.council-heraldic-button,
+.council-heraldic-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 7rem;
+  border: 1px solid rgba(215, 184, 147, 0.14);
+  border-radius: 5px;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(215, 184, 147, 0.12), transparent 52%),
+    rgba(0, 0, 0, 0.2);
+}
+
+.council-heraldic-button {
+  width: 100%;
+  padding: 0.55rem;
+  cursor: zoom-in;
+}
+
+.council-heraldic-button:focus-visible {
+  outline: 2px solid rgba(215, 184, 147, 0.95);
+  outline-offset: 4px;
+}
+
+.council-heraldic-image {
+  width: 100%;
+  max-height: 7.5rem;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.council-heraldic-button:hover .council-heraldic-image {
+  filter: brightness(1.08);
+  transform: scale(1.02);
+}
+
+.council-heraldic-placeholder span {
+  max-width: 5.5rem;
+  color: rgba(215, 184, 147, 0.74);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.45;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.council-house-content {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.council-house-content h3 {
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.council-detail-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 0.65rem 0.85rem;
+}
+
+.council-detail-list div {
+  display: grid;
+  gap: 0.16rem;
+}
+
+.council-detail-list dt {
+  color: #e8c89d;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.council-detail-list dd {
+  margin: 0;
+  color: rgba(240, 223, 207, 0.86);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.council-house-content p {
+  color: rgba(240, 223, 207, 0.78);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
 .realm-symbol-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
   gap: 1rem;
   margin-top: 1.2rem;
+}
+
+.heraldry-record-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
 }
 
 .realm-symbol-card {
@@ -1800,6 +1978,12 @@ blockquote {
   border: 1px solid rgba(215, 184, 147, 0.14);
   border-radius: 6px;
   background: rgba(8, 8, 9, 0.22);
+}
+
+.heraldry-record-card {
+  background:
+    linear-gradient(145deg, rgba(215, 184, 147, 0.06), rgba(80, 24, 30, 0.08)),
+    rgba(8, 8, 9, 0.22);
 }
 
 .realm-symbol-image-button {
@@ -2104,6 +2288,74 @@ blockquote {
 
   .realm-symbol-card {
     grid-template-columns: minmax(5rem, 5.8rem) minmax(0, 1fr);
+  }
+
+  .council-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .council-table,
+  .council-table thead,
+  .council-table tbody,
+  .council-table tr,
+  .council-table th,
+  .council-table td {
+    display: block;
+  }
+
+  .council-table {
+    min-width: 0;
+  }
+
+  .council-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .council-table tr {
+    margin-bottom: 0.85rem;
+    padding: 0.85rem;
+    border: 1px solid rgba(215, 184, 147, 0.13);
+    border-radius: 6px;
+    background: rgba(5, 5, 6, 0.22);
+  }
+
+  .council-table td {
+    display: grid;
+    grid-template-columns: minmax(7rem, 40%) 1fr;
+    gap: 0.75rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid rgba(215, 184, 147, 0.08);
+    font-size: 0.9rem;
+  }
+
+  .council-table td::before {
+    content: attr(data-label);
+    color: #e8c89d;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .council-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .council-house-card {
+    grid-template-columns: 1fr;
+  }
+
+  .council-heraldic-button,
+  .council-heraldic-placeholder {
+    width: min(7rem, 100%);
+    min-height: 5.5rem;
   }
 
   .not-found-page {

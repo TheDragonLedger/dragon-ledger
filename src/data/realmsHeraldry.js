@@ -1,9 +1,18 @@
 import elariaImage from "../assets/elaria.webp";
 import elariaArmyHeraldic from "../assets/elaria-army-heraldic.webp";
 import elariaHeraldic from "../assets/elaria-heraldic.webp";
+import elariaHouseCorvaneHeraldic from "../assets/elaria-house-corvane-heraldic.webp";
+import elariaHouseMirelleHeraldic from "../assets/elaria-house-mirelle-heraldic.webp";
+import elariaHouseSerenHeraldic from "../assets/elaria-house-seren-heraldic.webp";
+import elariaHouseThornwellHeraldic from "../assets/elaria-house-thornwell-heraldic.webp";
+import elariaHouseValenHeraldic from "../assets/elaria-house-valen-heraldic.webp";
 import elariaMap from "../assets/elaria-map.webp";
 import elariaSeal from "../assets/elaria-seal.webp";
 import elariaShield from "../assets/elaria-shield.webp";
+import elariaSymbolGreatTree from "../assets/elaria-symbol-great-tree.webp";
+import elariaSymbolGuidingStar from "../assets/elaria-symbol-guiding-star.webp";
+import elariaSymbolRiverRoads from "../assets/elaria-symbol-river-roads.webp";
+import elariaSymbolStags from "../assets/elaria-symbol-stags.webp";
 import houseAsterynShield from "../assets/house-asteryn-shield.webp";
 import malricShield from "../assets/malric-shield.webp";
 import tharvaneArmyHeraldic from "../assets/tharvane-army-heraldic.webp";
@@ -45,42 +54,145 @@ export const realmsHeraldry = [
       body: [
         "Elaria is ruled by a council of five families, each carrying a different responsibility within the realm. Their power is meant to come from service, stewardship, and the work that keeps Elaria alive.",
         "Influence in Elaria is measured less by noble privilege than by contribution: industry, culture, diplomacy, food, water, defense, logistics, and the public trust that allows the realm to flourish.",
+        "Through responsibility, inspiration, connection, sustenance, and protection, Elaria lives its motto: Aelora Varen.",
+      ],
+      table: [
+        {
+          house: "Valen",
+          representative: "Matt Valen",
+          heir: "Silvia Valen",
+          seat: "Valmere",
+          sphere: "Industry & Technology",
+          value: "Responsibility",
+        },
+        {
+          house: "Mirelle",
+          representative: "Cassian Mirelle",
+          heir: "Maia Mirelle",
+          seat: "Mirel",
+          sphere: "Arts & Education",
+          value: "Inspiration",
+        },
+        {
+          house: "Corvane",
+          representative: "Seraphine Corvane",
+          heir: "Tea Corvane",
+          seat: "Caelis",
+          sphere: "Diplomacy",
+          value: "Connection",
+        },
+        {
+          house: "Seren",
+          representative: "Rowan Seren",
+          heir: "Lyanna Seren",
+          seat: "Caelis",
+          sphere: "Agriculture & Waterways",
+          value: "Sustenance",
+        },
+        {
+          house: "Thornwell",
+          representative: "Marcus Thornwell",
+          heir: "Elric Thornwell",
+          seat: "Caelis",
+          sphere: "Defense & Security",
+          value: "Protection",
+        },
       ],
       entries: [
         {
           name: "House Valen",
+          heraldic: elariaHouseValenHeraldic,
+          representative: "Matt Valen",
+          heir: "Silvia Valen",
+          seat: "Valmere",
+          sphere: "Industry, infrastructure, technology, and engineering",
+          value: "Responsibility",
           description:
-            "Seat: Valmere. Industry, infrastructure, commerce, and technology. House Valen's factories, logistics networks, businesses, and innovations touch nearly every corner of Elaria. Symbolic value: Building.",
+            "House Valen represents the builders of Elaria. Roads, factories, communications networks, public works, and technological innovation all fall within their sphere. Their duty is to ensure that the foundations of the realm remain strong.",
         },
         {
           name: "House Mirelle",
+          heraldic: elariaHouseMirelleHeraldic,
+          representative: "Lord Cassian Mirelle",
+          heir: "Maia Mirelle",
+          seat: "Mirel",
+          sphere: "Arts, culture, and education",
+          value: "Inspiration",
           description:
-            "Seat: Mirel. Culture, arts, education, and historical preservation. The Mirelles safeguard Elaria's artistic soul, supporting artists, musicians, writers, scholars, and cultural institutions. Heir: Maia Mirelle. Symbolic value: Inspiration.",
+            "House Mirelle preserves the stories, traditions, and creative spirit of Elaria. They believe a realm must nourish the mind and soul as carefully as it nurtures its economy.",
         },
         {
           name: "House Corvane",
+          heraldic: elariaHouseCorvaneHeraldic,
+          representative: "Lady Seraphine Corvane",
+          heir: "Tea Corvane",
+          seat: "Caelis",
+          sphere: "Diplomacy, foreign affairs, and international relations",
+          value: "Connection",
           description:
-            "Seat: Caelis. Diplomacy and foreign relations. House Corvane has represented Elaria abroad for generations through diplomats, negotiators, and ambassadors. Heir: Tea Corvane. Symbolic value: Understanding.",
+            "House Corvane serves as Elaria's voice beyond its borders, building relationships with neighboring realms and maintaining the bridges that keep peace alive.",
         },
         {
           name: "House Seren",
+          heraldic: elariaHouseSerenHeraldic,
+          representative: "Lord Rowan Seren",
+          heir: "Lyanna Seren",
+          seat: "Caelis",
+          sphere: "Agriculture, waterways, and resource management",
+          value: "Sustenance",
           description:
-            "Seat: Caelis. Agriculture, waterways, and resource management. The Seren family oversees many of the systems that keep Elaria fed, from rivers and irrigation to agricultural regions. Symbolic value: Stewardship.",
+            "House Seren oversees the resources that allow Elaria to flourish, ensuring that communities remain fed, connected, and supported.",
         },
         {
           name: "House Thornwell",
+          heraldic: elariaHouseThornwellHeraldic,
+          representative: "General Marcus Thornwell",
+          heir: "Elric Thornwell",
+          seat: "Caelis",
+          sphere: "Defense, logistics, and security",
+          value: "Protection",
           description:
-            "Seat: Caelis. Defense, logistics, and national security. The Thornwells coordinate defensive systems including Whitehold, Harborwatch, emergency planning, and national logistics. Symbolic value: Guardianship.",
+            "House Thornwell safeguards the realm from threats both external and internal, maintaining the structures that allow Elarians to live in safety.",
         },
       ],
     },
     heraldry: {
-      title: "Roots, rivers, and the living tree",
+      title: "Trees, rivers, stars, and stag antlers",
       body: [
-        "Elarian heraldry often returns to trees, rivers, gold leaves, and open hands. These symbols speak of growth, shared shelter, and the belief that a realm survives through its bonds.",
-        "The Great Tree is the most enduring emblem: a reminder that branches may reach in different directions while still belonging to the same living root.",
+        "Elarian heraldry often returns to trees, rivers, stars, and stag antlers. These symbols speak of growth, shared shelter, guidance, and the belief that a realm survives through the bonds between its people.",
+        "Unlike many nations whose heraldry celebrates conquest or military strength, Elarian symbolism focuses on belonging, stewardship, and the enduring connections that unite communities across generations.",
       ],
-      motifs: ["The Great Tree", "Gold leaves", "River roads", "Open hands"],
+      records: [
+        {
+          title: "The Great Tree",
+          label: "Living Root",
+          image: elariaSymbolGreatTree,
+          description:
+            "A symbol of community, growth, and shared heritage. Its roots and branches remind Elarians that many lives can grow from the same foundation.",
+        },
+        {
+          title: "River Roads",
+          label: "Shared Paths",
+          image: elariaSymbolRiverRoads,
+          description:
+            "The rivers that connect the realm. They represent cooperation, trade, and the bonds that unite distant communities.",
+        },
+        {
+          title: "The Guiding Star",
+          label: "Hope and Direction",
+          image: elariaSymbolGuidingStar,
+          description:
+            "A symbol of hope and guidance. It reminds Elarians to look beyond themselves and follow the ideals that strengthen the realm.",
+        },
+        {
+          title: "The Stags",
+          label: "Forest Guardians",
+          image: elariaSymbolStags,
+          description:
+            "Guardians of the forests and valleys. They symbolize stewardship, renewal, and strength used to protect rather than dominate.",
+        },
+      ],
+      motifs: ["The Great Tree", "River Roads", "The Guiding Star", "The Stags"],
     },
     symbols: [
       {
