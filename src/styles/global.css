@@ -272,6 +272,26 @@ img {
   opacity: 1;
 }
 
+.realm-detail-page > .page-intro {
+  max-width: 48rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.realm-detail-page > .page-intro h1::after {
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(90deg, transparent, var(--gold), rgba(127, 47, 39, 0.62), transparent);
+}
+
+.realm-detail-page > .back-link {
+  display: flex;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .archive-entry-grid {
   margin-top: 0.25rem;
 }
@@ -1700,9 +1720,37 @@ blockquote {
   margin: 2rem 0;
 }
 
+.realm-detail-hero .archive-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.realm-detail-hero .card-image-button {
+  display: grid;
+  place-items: center;
+  height: clamp(16rem, 31vw, 21rem);
+  overflow: hidden;
+  background: rgba(8, 8, 9, 0.58);
+}
+
+.realm-detail-hero .card-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.realm-detail-hero .card-image-map {
+  object-fit: contain;
+}
+
+.realm-detail-hero .card-image-button-map {
+  height: auto;
+  aspect-ratio: 1122 / 1402;
+}
+
 .realm-detail-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));
   gap: 1.2rem;
 }
 
@@ -1736,15 +1784,17 @@ blockquote {
 
 .realm-symbol-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
   gap: 1rem;
   margin-top: 1.2rem;
 }
 
 .realm-symbol-card {
   display: grid;
-  gap: 0.7rem;
-  align-content: start;
+  grid-template-columns: minmax(5.75rem, 7rem) minmax(0, 1fr);
+  gap: 0.35rem 0.85rem;
+  align-content: center;
+  align-items: center;
   min-height: 100%;
   padding: 0.9rem;
   border: 1px solid rgba(215, 184, 147, 0.14);
@@ -1754,6 +1804,7 @@ blockquote {
 
 .realm-symbol-image-button {
   display: block;
+  grid-row: 1 / 4;
   width: 100%;
   padding: 0;
   border: 0;
@@ -1769,7 +1820,7 @@ blockquote {
 .realm-symbol-image {
   width: 100%;
   aspect-ratio: 1 / 1;
-  padding: 0.7rem;
+  padding: 0.55rem;
   border: 1px solid rgba(215, 184, 147, 0.16);
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.2);
@@ -1787,7 +1838,7 @@ blockquote {
 }
 
 .realm-symbol-card .card-eyebrow {
-  margin-top: 0.1rem;
+  margin-top: 0;
 }
 
 .realm-symbol-card h3 {
@@ -2033,6 +2084,10 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .realm-detail-hero .card-image-button {
+    height: clamp(12rem, 62vw, 17rem);
+  }
+
   .realm-card-footer {
     font-size: 0.68rem;
   }
@@ -2045,6 +2100,10 @@ blockquote {
   .realm-chip-row span,
   .realm-place-links a {
     font-size: 0.74rem;
+  }
+
+  .realm-symbol-card {
+    grid-template-columns: minmax(5rem, 5.8rem) minmax(0, 1fr);
   }
 
   .not-found-page {

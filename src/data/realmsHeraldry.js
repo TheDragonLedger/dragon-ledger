@@ -4,10 +4,21 @@ import elariaHeraldic from "../assets/elaria-heraldic.webp";
 import elariaMap from "../assets/elaria-map.webp";
 import elariaSeal from "../assets/elaria-seal.webp";
 import elariaShield from "../assets/elaria-shield.webp";
+import houseAsterynShield from "../assets/house-asteryn-shield.webp";
+import malricShield from "../assets/malric-shield.webp";
+import tharvaneArmyHeraldic from "../assets/tharvane-army-heraldic.webp";
+import tharvaneHeraldic from "../assets/tharvane-heraldic.webp";
 import tharvaneImage from "../assets/tharvane.webp";
 import tharvaneMap from "../assets/tharvane-map.webp";
+import tharvaneRoyalGuardShield from "../assets/tharvane-royal-guard-shield.webp";
+import tharvaneShield from "../assets/tharvane-shield.webp";
+import varynBranchShield from "../assets/varyn-branch-shield.webp";
+import virekhalArmyHeraldic from "../assets/virekhal-army-heraldic.webp";
+import virekhalHeraldic from "../assets/virekhal-heraldic.webp";
 import virekhalImage from "../assets/virekhal.webp";
 import virekhalMap from "../assets/virekhal-map.webp";
+import virekhalPresidentSeal from "../assets/virekhal-president-seal.webp";
+import virekhalSeal from "../assets/virekhal-seal.webp";
 
 export const realmsHeraldry = [
   {
@@ -158,6 +169,36 @@ export const realmsHeraldry = [
       ],
       motifs: ["Sunburst", "Red stone", "Desert hawk", "Forged blade"],
     },
+    symbols: [
+      {
+        title: "Virekhal Heraldic",
+        label: "Realm Heraldic",
+        image: virekhalHeraldic,
+        description:
+          "A formal emblem of Virekhal, tied to endurance, pride, and the realm's public identity.",
+      },
+      {
+        title: "Virekhal Seal",
+        label: "Official Seal",
+        image: virekhalSeal,
+        description:
+          "The official seal of Virekhal, used for civic records, formal documents, and state authority.",
+      },
+      {
+        title: "Virekhal Army Heraldic",
+        label: "Army Heraldic",
+        image: virekhalArmyHeraldic,
+        description:
+          "A military heraldic mark connected to discipline, loyalty, and readiness beneath the desert sun.",
+      },
+      {
+        title: "President Seal",
+        label: "Presidential Seal",
+        image: virekhalPresidentSeal,
+        description:
+          "The seal of Virekhal's presidency, representing civil leadership, continuity, and public duty.",
+      },
+    ],
     language: [
       "Toran Navir - Ready for Tomorrow",
       "Valor is forged, not given.",
@@ -225,6 +266,57 @@ export const realmsHeraldry = [
       ],
       motifs: ["Winter crown", "Silver mountain", "Snowflake", "Wolf standard"],
     },
+    symbols: [
+      {
+        title: "Tharvane Heraldic",
+        label: "Realm Heraldic",
+        image: tharvaneHeraldic,
+        description:
+          "A formal emblem of Tharvane, tied to winter, duty, endurance, and the public identity of the northern realm.",
+      },
+      {
+        title: "Tharvane Shield",
+        label: "Realm Shield",
+        image: tharvaneShield,
+        description:
+          "The shield of Tharvane, carrying the severe elegance of a realm shaped by obedience, memory, and survival.",
+      },
+      {
+        title: "House Asteryn Shield",
+        label: "Royal House",
+        image: houseAsterynShield,
+        description:
+          "The mark of House Asteryn, the royal line bound to crown, realm, and the old weight of Tharvanian duty.",
+      },
+      {
+        title: "Varyn's Branch Shield",
+        label: "Royal Branch",
+        image: varynBranchShield,
+        description:
+          "A branch shield connected to Varyn's line, carrying its own place within the wider Asteryn legacy.",
+      },
+      {
+        title: "Malric Shield",
+        label: "Noble House",
+        image: malricShield,
+        description:
+          "A house shield connected to Malric, reserved for the colder politics and inherited loyalties of Tharvane.",
+      },
+      {
+        title: "Royal Guard Shield",
+        label: "Royal Guard",
+        image: tharvaneRoyalGuardShield,
+        description:
+          "The shield of the royal guard, tied to protection, obedience, and the defense of the crown.",
+      },
+      {
+        title: "Tharvane Army Heraldic",
+        label: "Army Heraldic",
+        image: tharvaneArmyHeraldic,
+        description:
+          "A military heraldic mark for Tharvane's armed forces, shaped by discipline, endurance, and northern vigilance.",
+      },
+    ],
     language: [
       "Norys Veth - Through Obedience We Survive",
       "We endure the cold.",

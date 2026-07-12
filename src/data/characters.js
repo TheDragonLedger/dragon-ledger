@@ -202,7 +202,7 @@ export const valenFamily = [
     quote: "Some truths arrive gently and still change the room.",
   },
   {
-    name: "Mat Valen",
+    name: "Matt Valen",
     portrait: matPortrait,
     keywords: ["Charm", "Resilience", "History"],
     description:
