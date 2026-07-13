@@ -21,6 +21,10 @@ import tharvaneImage from "../assets/tharvane.webp";
 import tharvaneMap from "../assets/tharvane-map.webp";
 import tharvaneRoyalGuardShield from "../assets/tharvane-royal-guard-shield.webp";
 import tharvaneShield from "../assets/tharvane-shield.webp";
+import tharvaneSymbolCrownOfWinter from "../assets/tharvane-symbol-crown-of-winter.webp";
+import tharvaneSymbolSnowflake from "../assets/tharvane-symbol-snowflake.webp";
+import tharvaneSymbolWhiteWolf from "../assets/tharvane-symbol-white-wolf.webp";
+import tharvaneSymbolWinterStar from "../assets/tharvane-symbol-winter-star.webp";
 import varynBranchShield from "../assets/varyn-branch-shield.webp";
 import virekhalArmyHeraldic from "../assets/virekhal-army-heraldic.webp";
 import virekhalHeraldic from "../assets/virekhal-heraldic.webp";
@@ -28,6 +32,10 @@ import virekhalImage from "../assets/virekhal.webp";
 import virekhalMap from "../assets/virekhal-map.webp";
 import virekhalPresidentSeal from "../assets/virekhal-president-seal.webp";
 import virekhalSeal from "../assets/virekhal-seal.webp";
+import virekhalSymbolDesertHawk from "../assets/virekhal-symbol-desert-hawk.webp";
+import virekhalSymbolForgedBlade from "../assets/virekhal-symbol-forged-blade.webp";
+import virekhalSymbolRedstone from "../assets/virekhal-symbol-redstone.webp";
+import virekhalSymbolSunburst from "../assets/virekhal-symbol-sunburst.webp";
 
 export const realmsHeraldry = [
   {
@@ -284,10 +292,39 @@ export const realmsHeraldry = [
       ],
     },
     heraldry: {
-      title: "Sun, stone, hawk, and blade",
+      title: "Sun, stone, and the open horizon",
       body: [
-        "Virekhali heraldry favors sunbursts, red stone, desert gold, sharp silhouettes, and birds of prey. Its symbols carry heat, clarity, freedom, and alertness.",
-        "The hawk is often used as a mark of watchfulness: a creature that survives by seeing far, moving quickly, and trusting the open sky.",
+        "Virekhali heraldry draws inspiration from the lands that shaped its people: the blazing sun, the red stone of the Ashen Wastes, the hawks that patrol the skies, and the blades carried in defense of the realm. Together, these symbols reflect resilience, vigilance, and the belief that tomorrow is worth preparing for.",
+      ],
+      records: [
+        {
+          title: "The Sunburst",
+          label: "Hope, Opportunity, Tomorrow",
+          image: virekhalSymbolSunburst,
+          description:
+            "The Sunburst is the most recognizable symbol of Virekhal. Rising above the horizon, it represents the belief that every new day brings new possibilities and that the future is worth preparing for.",
+        },
+        {
+          title: "Redstone",
+          label: "Resilience, Endurance, Determination",
+          image: virekhalSymbolRedstone,
+          description:
+            "Named for the red stone formations scattered throughout the Ashen Wastes, Redstone symbolizes the strength to withstand hardship without breaking. Like the stone itself, the people of Virekhal endure wind, heat, and time.",
+        },
+        {
+          title: "The Desert Hawk",
+          label: "Freedom, Vigilance, Vision",
+          image: virekhalSymbolDesertHawk,
+          description:
+            "The Desert Hawk watches from above, seeing dangers and opportunities long before others. It represents the independence of the Virekhali people and their commitment to protecting both liberty and the realm.",
+        },
+        {
+          title: "The Forged Blade",
+          label: "Readiness, Duty, Sacrifice",
+          image: virekhalSymbolForgedBlade,
+          description:
+            "Unlike ceremonial weapons, the Forged Blade symbolizes practical strength. It reflects the belief that peace is preserved through preparedness and that every citizen shares responsibility for the realm's future.",
+        },
       ],
       motifs: ["Sunburst", "Red stone", "Desert hawk", "Forged blade"],
     },
@@ -381,12 +418,46 @@ export const realmsHeraldry = [
       ],
     },
     heraldry: {
-      title: "Winter blue, silver, and the mountain crown",
+      title: "Crown, snow, and the enduring wolf",
       body: [
-        "Tharvanian heraldry favors deep blue, silver, snow, wolves, mountain peaks, and crown forms. Its symbols are formal, severe, and built to outlast fashion.",
-        "The Crown of Winter is less a decoration than a promise: the realm may bend beneath storms, but it does not vanish.",
+        "The symbols of Tharvane reflect the values that have sustained the realm through generations of hardship. From the Crown of Winter that unites the kingdom to the White Wolf that guards its people, each emblem speaks of duty, loyalty, and the strength to endure even the harshest storm.",
       ],
-      motifs: ["Winter crown", "Silver mountain", "Snowflake", "Wolf standard"],
+      records: [
+        {
+          title: "The Snowflake",
+          label: "Order, Discipline, Endurance",
+          image: tharvaneSymbolSnowflake,
+          description:
+            "The most recognized symbol of Tharvane. Its perfect form reflects the order, discipline, and endurance required to survive in a harsh land.",
+        },
+        {
+          title: "The Crown of Winter",
+          label: "Authority, Stability, Continuity",
+          image: tharvaneSymbolCrownOfWinter,
+          description:
+            "More than a royal emblem, the Crown represents the continuity of the realm itself. Kings may come and go, but the Crown endures.",
+        },
+        {
+          title: "The White Wolf",
+          label: "Loyalty, Protection, Duty",
+          image: tharvaneSymbolWhiteWolf,
+          description:
+            "A symbol of loyalty and protection. Like a wolf pack, the people of Tharvane survive through duty to one another.",
+        },
+        {
+          title: "The Winter Star",
+          label: "Guidance, Perseverance, Hope",
+          image: tharvaneSymbolWinterStar,
+          description:
+            "A guiding light through the longest nights. The Winter Star reminds Tharvanians to persevere even when the path ahead is difficult to see.",
+        },
+      ],
+      motifs: [
+        "The Snowflake",
+        "The Crown of Winter",
+        "The White Wolf",
+        "The Winter Star",
+      ],
     },
     symbols: [
       {
