@@ -47,6 +47,31 @@
           title="The Soul of the Realm"
           :body="realm.soul"
         />
+
+        <section v-if="realm.litany" class="archive-card realm-litany-card">
+          <p class="eyebrow">{{ realm.litany.label }}</p>
+          <h2>{{ realm.litany.title }}</h2>
+          <div class="card-body">
+            <p v-for="paragraph in realm.litany.introduction" :key="paragraph">
+              {{ paragraph }}
+            </p>
+          </div>
+
+          <div class="litany-verse" :aria-label="realm.litany.title">
+            <div
+              v-for="(stanza, stanzaIndex) in realm.litany.verses"
+              :key="`stanza-${stanzaIndex}`"
+              class="litany-stanza"
+            >
+              <p v-for="line in stanza" :key="line">{{ line }}</p>
+            </div>
+
+            <p class="litany-motto">
+              <strong>{{ realm.litany.motto.original }}</strong>
+              <span>{{ realm.litany.motto.translation }}</span>
+            </p>
+          </div>
+        </section>
       </section>
 
       <section class="realm-detail-grid" aria-label="Realm details">

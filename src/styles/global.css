@@ -1762,6 +1762,66 @@ blockquote {
   margin-top: 0;
 }
 
+.realm-detail-hero > .realm-litany-card {
+  grid-column: 1 / -1;
+}
+
+.realm-litany-card {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(215, 184, 147, 0.1), transparent 42%),
+    linear-gradient(135deg, rgba(27, 35, 43, 0.52), rgba(37, 19, 24, 0.82)),
+    rgba(17, 17, 18, 0.88);
+}
+
+.realm-litany-card .card-body {
+  max-width: 62rem;
+}
+
+.litany-verse {
+  margin-top: 1.35rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(215, 184, 147, 0.22);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(215, 184, 147, 0.12), transparent 48%),
+    linear-gradient(180deg, rgba(7, 10, 13, 0.55), rgba(22, 14, 18, 0.72));
+  text-align: center;
+}
+
+.litany-stanza + .litany-stanza {
+  margin-top: 1.2rem;
+}
+
+.litany-stanza p {
+  margin: 0;
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.litany-motto {
+  display: grid;
+  gap: 0.25rem;
+  margin: 1.55rem 0 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(215, 184, 147, 0.18);
+}
+
+.litany-motto strong {
+  color: #e8c89d;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 600;
+}
+
+.litany-motto span {
+  color: rgba(240, 223, 207, 0.82);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  font-style: italic;
+}
+
 .realm-detail-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));

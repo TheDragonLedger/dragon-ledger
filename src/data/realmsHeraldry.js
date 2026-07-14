@@ -56,6 +56,22 @@ export const realmsHeraldry = [
       "Elaria values warmth, celebration, friendship, and belonging. Its cities and towns often gather around gardens, river roads, local festivals, and the quiet rituals of family life.",
       "Even its most powerful families are expected to remember that influence is meant to shelter the realm, not stand above it.",
     ],
+    litany: {
+      label: "Cultural memory",
+      title: "The Hearth Litany",
+      introduction: [
+        "The Litany of Belonging, commonly known as The Hearth Litany, is taught to Elarian children from an early age. It reflects the belief that growth is not achieved alone, but through the support of family, friends, and community. Recited in homes, schools, guild halls, and military academies, it reminds Elarians that while every person walks their own path, no one is expected to walk it alone.",
+      ],
+      verses: [
+        ["The road is before me.", "I do not walk it alone.", "My people walk beside me."],
+        ["I will learn and grow.", "I will help others grow."],
+        ["Together we are strong.", "Together we become more."],
+      ],
+      motto: {
+        original: "Aelora Varen.",
+        translation: "Together, We Flourish.",
+      },
+    },
     government: {
       label: "Council of Five Families",
       title: "Stewardship through contribution and responsibility",
@@ -68,7 +84,7 @@ export const realmsHeraldry = [
         {
           house: "Valen",
           representative: "Matt Valen",
-          heir: "Silvia Valen",
+          heir: "Ash Valen",
           seat: "Valmere",
           sphere: "Industry & Technology",
           value: "Responsibility",
@@ -111,7 +127,7 @@ export const realmsHeraldry = [
           name: "House Valen",
           heraldic: elariaHouseValenHeraldic,
           representative: "Matt Valen",
-          heir: "Silvia Valen",
+          heir: "Ash Valen",
           seat: "Valmere",
           sphere: "Industry, infrastructure, technology, and engineering",
           value: "Responsibility",
@@ -266,6 +282,21 @@ export const realmsHeraldry = [
       "Virekhal does not measure strength only through conquest. Strength is endurance, readiness, restraint, and the ability to protect life in a place that rarely offers comfort freely.",
       "The desert leaves little room for pretense. Bonds are earned, promises matter, and pride can be both armor and burden.",
     ],
+    litany: {
+      label: "Cultural memory",
+      title: "The Traveler's Litany",
+      introduction: [
+        "The Litany of Tomorrow, often called The Traveler's Litany, is taught to Virekhali children from an early age. Originally created as a reminder that the future belongs to those willing to prepare for it, the litany reflects the values of learning, adaptability, and perseverance that helped shape the nation. It is recited by students, explorers, merchants, soldiers, and innovators alike before journeys, challenges, and new beginnings, serving as a reminder that while tomorrow cannot be predicted, it can be met with courage and readiness.",
+      ],
+      verses: [
+        ["Tomorrow is unknown.", "Tomorrow is coming.", "I will meet it."],
+        ["I will learn.", "I will adapt.", "I will move forward."],
+      ],
+      motto: {
+        original: "Toran Navir.",
+        translation: "Ready for Tomorrow.",
+      },
+    },
     government: {
       label: "President and First Minister",
       title: "A modern government built on vigilance",
@@ -392,6 +423,22 @@ export const realmsHeraldry = [
       "Tharvane values discipline, memory, composure, and duty. Affection is rarely performed loudly, but loyalty can become immovable once given.",
       "Winter is not only weather here. It is a language of restraint, preparation, and survival.",
     ],
+    litany: {
+      label: "Cultural memory",
+      title: "The Winter Litany",
+      introduction: [
+        "The Litany of Endurance, often called The Winter Litany, is taught to Tharvanian children from an early age. Originally created as a reminder that duty and perseverance sustain the kingdom through the harsh winters, it is recited by children, soldiers, laborers, nobles, and even members of the royal family during times of hardship.",
+      ],
+      verses: [
+        ["The storm may come.", "The cold may follow.", "Yet I remain."],
+        ["I will stand.", "I will serve.", "I will endure."],
+        ["For the Realm.", "For the Crown.", "For those who come after me."],
+      ],
+      motto: {
+        original: "Norys Veth.",
+        translation: "Through Obedience We Survive.",
+      },
+    },
     government: {
       label: "House Asteryn",
       title: "A crown bound to realm and people",
