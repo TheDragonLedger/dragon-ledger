@@ -742,6 +742,14 @@ img {
     inset 0 1px 0 rgba(215, 184, 147, 0.07);
 }
 
+.kitten-story-detail {
+  align-items: start;
+}
+
+.kitten-story-detail .kitten-story-image {
+  align-self: start;
+}
+
 .kitten-story-image {
   width: 100%;
   max-width: 19rem;
