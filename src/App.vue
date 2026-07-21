@@ -18,14 +18,9 @@
         Murphy. All rights reserved.
       </p>
       <div class="site-footer-links">
-        <a href="mailto:thedragonledger@gmail.com">thedragonledger@gmail.com</a>
-        <a
-          href="https://www.instagram.com/thedragonledger/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Instagram: @thedragonledger
-        </a>
+        <router-link to="/beyond-the-ledger">
+          More from The Dragon Ledger →
+        </router-link>
       </div>
     </div>
   </footer>

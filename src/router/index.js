@@ -17,6 +17,7 @@ import KittenDragonStory from "../views/KittenDragonStory.vue";
 import Blog from "../views/Blog.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
+import BeyondLedger from "../views/BeyondLedger.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -116,6 +117,11 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact,
+  },
+  {
+    path: "/beyond-the-ledger",
+    name: "BeyondLedger",
+    component: BeyondLedger,
   },
   {
     path: "/:pathMatch(.*)*",

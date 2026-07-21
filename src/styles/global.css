@@ -1520,6 +1520,149 @@ blockquote {
   opacity: 1;
 }
 
+.beyond-page {
+  width: min(100%, 72rem);
+}
+
+.beyond-intro {
+  max-width: 46rem;
+}
+
+.beyond-lede {
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+.social-section {
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.social-section + .social-section {
+  padding-top: clamp(2rem, 4vw, 3.5rem);
+  border-top: 1px solid rgba(215, 184, 147, 0.12);
+}
+
+.social-section-header {
+  max-width: 46rem;
+  margin-bottom: 1.25rem;
+}
+
+.social-section-header h2 {
+  margin-bottom: 0.55rem;
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 0.98;
+}
+
+.social-section-header p {
+  color: rgba(245, 241, 234, 0.72);
+  line-height: 1.7;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.social-card {
+  min-height: 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1rem;
+  border: 1px solid rgba(215, 184, 147, 0.16);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(245, 241, 234, 0.055), rgba(127, 47, 39, 0.11)),
+    rgba(16, 16, 17, 0.72);
+  box-shadow: 0 1.25rem 2.4rem rgba(0, 0, 0, 0.18);
+  color: var(--paper);
+}
+
+.social-card-link {
+  transition:
+    border-color 0.24s ease,
+    transform 0.24s ease,
+    background 0.24s ease;
+}
+
+.social-card-link:hover,
+.social-card-link:focus-visible {
+  border-color: rgba(215, 184, 147, 0.4);
+  background:
+    linear-gradient(145deg, rgba(245, 241, 234, 0.08), rgba(127, 47, 39, 0.16)),
+    rgba(16, 16, 17, 0.78);
+  transform: translateY(-2px);
+}
+
+.social-card-pending {
+  opacity: 0.74;
+}
+
+.social-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(215, 184, 147, 0.24);
+  border-radius: 999px;
+  background: rgba(215, 184, 147, 0.08);
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.11rem;
+}
+
+.social-status {
+  padding: 0.25rem 0.45rem;
+  border: 1px solid rgba(215, 184, 147, 0.18);
+  border-radius: 999px;
+  color: rgba(215, 184, 147, 0.8);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.social-platform {
+  color: #fff8ef;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.social-name {
+  color: rgba(245, 241, 234, 0.9);
+  font-weight: 500;
+}
+
+.social-handle {
+  color: var(--gold);
+  overflow-wrap: anywhere;
+}
+
+.social-description {
+  margin-top: auto;
+  color: rgba(245, 241, 234, 0.62);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 /* Updated Kitten & Dragon 404 */
 
 .not-found-page {
