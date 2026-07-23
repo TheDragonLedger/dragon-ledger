@@ -4,6 +4,7 @@ import kittenCold from "../assets/kitten-cold.webp";
 import kittenDragonSleepingCouch from "../assets/kitten-dragon-sleeping-couch.webp";
 import kittenDragonDancingStars from "../assets/kitten-dragon-dancing-stars.webp";
 import kittenDragonSomethingFeelsWrong from "../assets/kitten-dragon-something-feels-wrong.webp";
+import kittenDragonRollerSkating from "../assets/kitten-dragon-roller-skating.webp";
 
 export const kittenDragonEntries = [
   {
@@ -167,6 +168,53 @@ export const kittenDragonEntries = [
       "Everything felt normal.",
       "And yet...",
       "She couldn't shake the feeling that her dragon was hiding something from her.",
+    ],
+  },
+  {
+    slug: "roller-skating",
+    title: "Roller Skating",
+    mood: "Park adventure",
+    image: kittenDragonRollerSkating,
+    summary:
+      "A new pair of skates, one excited Kitten, and a very watchful Dragon staying close enough to catch her.",
+    story: [
+      "The first thing Dragon saw when he got home was Kitten jumping excitedly around the living room, picking up two large bags and holding them out for him to see.",
+      "Not nearly as impressed as she clearly expected him to be, Dragon opened one of the bags and stared inside, trying to understand what was so interesting about its contents.",
+      "\"Love?\" he asked, pulling out a roller skate and looking at Kitten.",
+      "\"Oh, we're going to try something new.\"",
+      "\"Something new?\"",
+      "\"Roller skating! Rowan said it could be fun.\"",
+      "Dragon looked at the skate in his paw. Then at Kitten.",
+      "\"Do you remember that I have wings?\"",
+      "\"Yes, you do. But I don't, so...\"",
+      "Dragon narrowed his eyes slightly.",
+      "\"Mmm. Sorry, love, but are you sure you can handle this?\"",
+      "\"Oh, yep. I can handle heights. How much more difficult could this be?\"",
+      "Dragon stared at her.",
+      "As soon as those words left Kitten's mouth, he could already picture her discovering how fast the skates could go, immediately deciding that faster was better, and then realizing far too late that she had absolutely no idea how to stop.",
+      "Perhaps it was a very good thing he would be there.",
+      "\"When do you want to go?\"",
+      "\"Now?\"",
+      "Of course.",
+      "\"Okay. Let's put on all the protective gear first, and then we can go to the park.\"",
+      "Twenty minutes later, anyone walking through the park could see a very excited Kitten discovering exactly how fast she could go.",
+      "And how many turns she could make.",
+      "And apparently how much faster she could go after each one.",
+      "They could also see one very large Dragon following closely behind her, wings half-open and ready, never allowing more than a few meters between them.",
+      "Every so often, Dragon would decide she had been adventurous enough.",
+      "He would catch Kitten gently in his arms, lift her completely off her skates, and inspect her from ears to paws.",
+      "\"Dragon! I'm fine!\"",
+      "\"Mmm.\"",
+      "\"I am!\"",
+      "A kiss.",
+      "Another suspicious inspection.",
+      "And finally, Kitten was placed carefully back onto her skates.",
+      "\"Again?\"",
+      "Dragon sighed.",
+      "\"Again.\"",
+      "Kitten immediately rolled away with a delighted laugh.",
+      "Dragon followed right behind her.",
+      "Just in case.",
     ],
   },
 ];
