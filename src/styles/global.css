@@ -1178,6 +1178,35 @@ blockquote {
   border-top: 1px solid rgba(215, 184, 147, 0.16);
 }
 
+.journey-entry-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.1rem;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(215, 184, 147, 0.2);
+  border-radius: 6px;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.journey-entry-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.journey-entry-image:hover img {
+  opacity: 0.92;
+  transform: scale(1.01);
+}
+
+.journey-entry-image:focus-visible {
+  outline: 2px solid rgba(215, 154, 160, 0.82);
+  outline-offset: 3px;
+}
+
 .journey-card-detail p + p {
   margin-top: 0.85rem;
 }

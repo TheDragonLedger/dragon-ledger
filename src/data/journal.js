@@ -160,4 +160,47 @@ export const journalEntries = [
       },
     ],
   },
+  {
+    title: "Finding Familiar Faces",
+    period: "The faces become familiar",
+    motif: "An ordinary evening together",
+    excerpt:
+      "Every story begins with names. Today, those names finally have faces.",
+    image: "finding-familiar-faces.webp",
+    imageAlt:
+      "Ash and Emilia reading together while Dragon watches over Kitten, with Umbra asleep nearby",
+    details: [
+      {
+        text: "For a long time, Ash, Emilia, Dragon, and Kitten existed only in my imagination. I knew how they smiled, how they comforted one another, and how it felt to share a quiet evening beside them. Finding the right faces wasn't about creating new characters. It was about recognizing the ones who had been with me all along.",
+      },
+      {
+        text: "These are now their official illustrations.",
+      },
+      {
+        text: "From this point forward, they will remain consistent across The Dragon Ledger. Their appearance may change with different lighting, perspectives, or moments in the story, but their identities will stay the same.",
+      },
+      {
+        text: "Seeing them together like this feels strangely familiar, almost as if I've simply been invited into a room where they were already waiting.",
+      },
+      {
+        text: "Ash and Emilia lost in a book.",
+      },
+      {
+        text: "Dragon watching over Kitten as she reads.",
+      },
+      {
+        text: "Umbra asleep nearby.",
+      },
+      {
+        text: "No grand adventure. No dramatic revelation.",
+      },
+      {
+        text: "Just an ordinary evening spent together.",
+      },
+      {
+        text: "And somehow, that feels like the perfect introduction.",
+        emphasis: true,
+      },
+    ],
+  },
 ];

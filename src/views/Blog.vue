@@ -44,6 +44,21 @@
           :id="getDetailId(entry)"
           class="journey-card-detail"
         >
+          <button
+            v-if="entry.image"
+            :ref="(element) => setImageButton(entry, element)"
+            class="journey-entry-image"
+            type="button"
+            :aria-label="`Open ${entry.title} illustration`"
+            @click="openEntryImage(entry)"
+          >
+            <img
+              :src="getEntryImage(entry.image)"
+              :alt="entry.imageAlt"
+              width="1402"
+              height="1122"
+            />
+          </button>
           <p
             v-for="detail in entry.details"
             :key="detail.text"
@@ -54,15 +69,50 @@
         </div>
       </article>
     </section>
+
+    <Teleport to="body">
+      <div
+        v-if="openImageEntry"
+        class="image-lightbox"
+        role="dialog"
+        aria-modal="true"
+        :aria-label="`${openImageEntry.title} illustration preview`"
+        @keydown.esc="closeEntryImage"
+        @click.self="closeEntryImage"
+      >
+        <button
+          ref="closeButton"
+          class="image-lightbox-close"
+          type="button"
+          aria-label="Close illustration preview"
+          @click="closeEntryImage"
+        >
+          Close
+        </button>
+        <img
+          :src="getEntryImage(openImageEntry.image)"
+          :alt="openImageEntry.imageAlt"
+        />
+      </div>
+    </Teleport>
   </main>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { nextTick, ref, watch } from "vue";
 import { journalEntries } from "../data/journal";
 
 const journalEntriesNewestFirst = [...journalEntries].reverse();
 const expandedEntries = ref([]);
+const openImageEntry = ref(null);
+const closeButton = ref(null);
+const imageButtons = new Map();
+
+const entryImages = import.meta.glob("../assets/*", {
+  eager: true,
+  import: "default",
+  query: "?url",
+});
 
 function getJourneyNumber(index) {
   return String(journalEntries.length - index).padStart(2, "0");
@@ -83,4 +133,31 @@ function toggleEntry(entry) {
     ? expandedEntries.value.filter((title) => title !== entry.title)
     : [...expandedEntries.value, entry.title];
 }
+
+function getEntryImage(filename) {
+  return entryImages[`../assets/${filename}`];
+}
+
+function setImageButton(entry, element) {
+  if (element) imageButtons.set(entry.title, element);
+}
+
+function openEntryImage(entry) {
+  openImageEntry.value = entry;
+}
+
+function closeEntryImage() {
+  openImageEntry.value = null;
+}
+
+watch(openImageEntry, async (entry, previousEntry) => {
+  await nextTick();
+
+  if (entry) {
+    closeButton.value?.focus();
+    return;
+  }
+
+  if (previousEntry) imageButtons.get(previousEntry.title)?.focus();
+});
 </script>
