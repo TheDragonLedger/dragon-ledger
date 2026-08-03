@@ -124,4 +124,40 @@ export const journalEntries = [
     excerpt:
       "Book Two begins to take shape, one quiet chapter at a time. After years spent finding Emilia, Ash, and the world around them, the story continues forward: new choices, deeper wounds, and another path beginning beneath the surface of everything already built.",
   },
+  {
+    title: "The Little Corner Grows",
+    period: "Kitten & Dragon",
+    motif: "A softer spark beside the archive",
+    excerpt:
+      "Kitten & Dragon begins as a small illustrated corner of warmth, coffee, quiet adventures, and tenderness. What started as a gentle side space slowly becomes its own tiny world within The Dragon Ledger: a place for little stories, quiet jokes, and the kind of softness that makes the wider archive feel more alive.",
+    details: [
+      {
+        text: "Kitten & Dragon began as a gentle corner, something small and warm beside the larger archive.",
+      },
+      {
+        text: "With each illustrated scene, it became clearer that the little stories had their own rhythm: coffee, blankets, playful magic, tired mornings, tender evenings, and the kind of love that feels ordinary in the best way.",
+      },
+      {
+        text: "They are not separate from The Dragon Ledger. They are one of its softest rooms: a place where the archive can rest, smile, and remember that even tiny stories can carry a whole world of feeling.",
+      },
+    ],
+  },
+  {
+    title: "The Doors Open Wider",
+    period: "The Ledger beyond the site",
+    motif: "Finding the archive beyond the website",
+    excerpt:
+      "The Dragon Ledger begins to reach beyond its first home, with social spaces opened for readers, images, fragments, and small discoveries. Not everything lives on the website, but every path leads back to the archive and to the stories slowly gathering there.",
+    details: [
+      {
+        text: "The Dragon Ledger does not stay contained to a single doorway for long.",
+      },
+      {
+        text: "After the website found its first shape, small social spaces began to open around it: places for images, fragments, updates, and quiet invitations back into the archive.",
+      },
+      {
+        text: "The heart of the project remains here, but those outer paths give the world room to breathe in public, one small discovery at a time.",
+      },
+    ],
+  },
 ];

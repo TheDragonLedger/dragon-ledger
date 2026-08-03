@@ -5,6 +5,7 @@ import kittenDragonSleepingCouch from "../assets/kitten-dragon-sleeping-couch.we
 import kittenDragonDancingStars from "../assets/kitten-dragon-dancing-stars.webp";
 import kittenDragonSomethingFeelsWrong from "../assets/kitten-dragon-something-feels-wrong.webp";
 import kittenDragonRollerSkating from "../assets/kitten-dragon-roller-skating.webp";
+import kittenDragonTooEarlyForAdulting from "../assets/kitten-dragon-too-early-for-adulting.webp";
 
 export const kittenDragonEntries = [
   {
@@ -215,6 +216,55 @@ export const kittenDragonEntries = [
       "Kitten immediately rolled away with a delighted laugh.",
       "Dragon followed right behind her.",
       "Just in case.",
+    ],
+  },
+  {
+    slug: "too-early-for-adulting",
+    title: "Too Early for Adulting",
+    mood: "Monday morning",
+    image: kittenDragonTooEarlyForAdulting,
+    summary:
+      "A cold Monday morning, too little caffeine, and one dragon brave enough to tease Kitten before her first cup.",
+    story: [
+      "Monday mornings were always difficult.",
+      "On days like this, Kitten would happily stay in bed for at least another hour if the world allowed it.",
+      "Unfortunately for her...",
+      "The world had Dragon.",
+      "After several unsuccessful attempts to convince her that morning had, in fact, arrived, Dragon would simply scoop his sleepy kitten into his arms, carry her to the bathroom, kiss her forehead, and quietly make his way to the kitchen to prepare breakfast.",
+      "A few minutes later, Kitten would finally appear.",
+      "Sometimes she shuffled her feet.",
+      "Sometimes she yawned so dramatically Dragon wondered if she was trying to swallow the entire kitchen.",
+      "This morning, she did both.",
+      "The air was still cold, so Kitten immediately sat beside Dragon, stealing as much of his warmth as she could while waiting for breakfast.",
+      "\"Having trouble staying awake, my love?\"",
+      "\"Too cold...\"",
+      "She yawned.",
+      "\"...too early.\"",
+      "Dragon smiled.",
+      "\"If you don't hurry, you'll have to run to work.\"",
+      "Kitten sighed dramatically.",
+      "\"You see? If I had wings, I could just fly there.\"",
+      "Dragon raised an eyebrow.",
+      "\"And you would still stay in bed until the very last minute.\"",
+      "\"I would not.\"",
+      "\"You absolutely would.\"",
+      "\"I...\"",
+      "She stopped.",
+      "Dragon waited.",
+      "\"...maybe.\"",
+      "He chuckled.",
+      "\"And then you'd end up rushing through the skies instead.\"",
+      "Kitten looked at him with the deeply unimpressed expression only a sleepy, under-caffeinated kitten could manage.",
+      "Dragon smiled into his coffee.",
+      "There were few things more dangerous than teasing a kitten before she'd had her first cup.",
+      "\"...and yet,\" Dragon said, taking another sip, \"you still love me.\"",
+      "Kitten slowly lifted her mug.",
+      "She took one careful sip.",
+      "Another.",
+      "Then looked at him.",
+      "\"I'm trying to remember why.\"",
+      "Dragon laughed.",
+      "Monday mornings suddenly didn't feel nearly so cold.",
     ],
   },
 ];
